@@ -17,7 +17,7 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="16" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
@@ -27,7 +27,7 @@
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -64,28 +64,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ExampleAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="102" column="61" selection-start-line="102" selection-start-column="61" selection-end-line="102" selection-end-column="61" />
+            <state relative-caret-position="175">
+              <caret line="120" column="14" lean-forward="true" selection-start-line="120" selection-start-column="14" selection-end-line="120" selection-end-column="14" />
               <folding>
                 <element signature="docComment;class#ExampleAgent#0" />
                 <element signature="method#init#0;class#ExampleAgent#0" />
                 <element signature="method#chooseAction#0;class#ExampleAgent#0" />
                 <element signature="method#receiveMessage#0;class#ExampleAgent#0" />
-                <element signature="method#getMaxUtilityBid#0;class#ExampleAgent#0" />
                 <element signature="method#generateRandomBidWithUtility#0;class#ExampleAgent#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FrankAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+            <state relative-caret-position="-969">
+              <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
               <folding>
                 <element signature="docComment;class#FrankAgent#0" />
                 <element signature="method#init#0;class#FrankAgent#0" />
@@ -115,6 +114,9 @@
       <find>randomBid()</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -143,6 +145,7 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -154,6 +157,11 @@
             <path>
               <item name="ExampleAgent" type="b2602c69:ProjectViewProjectNode" />
               <item name="ExampleAgent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExampleAgent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExampleAgent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -236,7 +244,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49707603" visible="true" weight="0.22857143" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49707603" visible="true" weight="0.23346938" />
       <window_info id="Structure" order="1" sideWeight="0.50292397" side_tool="true" weight="0.20489796" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -320,30 +328,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExampleAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="102" column="61" selection-start-line="102" selection-start-column="61" selection-end-line="102" selection-end-column="61" />
-          <folding>
-            <element signature="docComment;class#ExampleAgent#0" />
-            <element signature="method#init#0;class#ExampleAgent#0" />
-            <element signature="method#chooseAction#0;class#ExampleAgent#0" />
-            <element signature="method#receiveMessage#0;class#ExampleAgent#0" />
-            <element signature="method#getMaxUtilityBid#0;class#ExampleAgent#0" />
-            <element signature="method#generateRandomBidWithUtility#0;class#ExampleAgent#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FrankAgent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        <state relative-caret-position="-969">
+          <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
           <folding>
             <element signature="docComment;class#FrankAgent#0" />
             <element signature="method#init#0;class#FrankAgent#0" />
             <element signature="docComment;method#chooseAction#0;class#FrankAgent#0" />
             <element signature="method#receiveMessage#0;class#FrankAgent#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ExampleAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="120" column="14" lean-forward="true" selection-start-line="120" selection-start-column="14" selection-end-line="120" selection-end-column="14" />
+          <folding>
+            <element signature="docComment;class#ExampleAgent#0" />
+            <element signature="method#init#0;class#ExampleAgent#0" />
+            <element signature="method#chooseAction#0;class#ExampleAgent#0" />
+            <element signature="method#receiveMessage#0;class#ExampleAgent#0" />
+            <element signature="method#generateRandomBidWithUtility#0;class#ExampleAgent#0" />
           </folding>
         </state>
       </provider>
