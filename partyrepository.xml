@@ -390,7 +390,7 @@
             <partyRepItem classPath="C:\Users\Wang\ExampleAgent\out\production\ExampleAgent\ExampleAgent.class" strategyParameters="">
                 <properties/>
             </partyRepItem>
-            <partyRepItem classPath="C:\Users\Wang\ExampleAgent\out\production\ExampleAgent\FrankAgent.class" strategyParameters="">
+            <partyRepItem classPath="C:\Users\Wang\ExampleAgent\out\production\ExampleAgent\Agent10.class" strategyParameters="">
                 <properties/>
             </partyRepItem>
         </partyRepItems>

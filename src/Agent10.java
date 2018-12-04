@@ -19,8 +19,8 @@ import java.util.List;
  * In the second half, it offers a random bid. It only accepts the bid on the table in this phase,
  * if the utility of the bid is higher than Example Agent's last bid.
  */
-public class FrankAgent extends AbstractNegotiationParty {
-    private final String description = "Frank Agent";
+public class Agent10 extends AbstractNegotiationParty {
+    private final String description = "Agent10";
 
     private Bid lastReceivedOffer; // offer on the table
     private Bid myLastOffer;

@@ -2,6 +2,6 @@
 <NegotiationOutcome currentTime="Thu Nov 22 13:30:18 GMT 2018" timeOfAgreement="0.5082872928176796" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="182" runtime="0.76216292" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@0" deadline="180rounds">
 <resultsOfAgent agent="ExampleAgent@0" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
 </resultsOfAgent>
-<resultsOfAgent agent="FrankAgent@1" agentDesc="Frank Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="FrankAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+<resultsOfAgent agent="Agent10@1" agentDesc="Frank Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="Agent10" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
 </resultsOfAgent>
 </NegotiationOutcome></Session>
