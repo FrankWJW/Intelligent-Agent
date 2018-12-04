@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<agentsStatistics>
+    <statistics>
+        <agentname>ExampleAgent</agentname>
+        <totalUndiscountedUtility>166.3933233280233</totalUndiscountedUtility>
+        <totalDiscountedUtility>166.3933233280233</totalDiscountedUtility>
+        <numberOfSessions>200</numberOfSessions>
+        <totalNashDist>12.436211554263046</totalNashDist>
+        <totalWelfare>332.78664665604794</totalWelfare>
+        <totalParetoDistance>3.4058594241867524</totalParetoDistance>
+        <meanDiscounted>0.8319666166401166</meanDiscounted>
+        <meanNashDistance>0.06218105777131523</meanNashDistance>
+        <meanParetoDistance>0.017029297120933762</meanParetoDistance>
+        <meanUndiscounted>0.8319666166401166</meanUndiscounted>
+        <meanWelfare>1.6639332332802397</meanWelfare>
+    </statistics>
+</agentsStatistics>

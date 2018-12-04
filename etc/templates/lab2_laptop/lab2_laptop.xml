@@ -1,0 +1,30 @@
+<negotiation_template> 
+<utility_space number_of_issues="3"> 
+<objective name="lab2_laptop" index="0" description="" etype="objective" type="objective"> 
+<issue vtype="discrete" name="Brand" index="1" etype="discrete" type="discrete"> 
+<item index="1" value="Dell(0)"> 
+</item> 
+<item index="2" value="HP(0)"> 
+</item> 
+<item index="3" value="Apple(0)"> 
+</item> 
+</issue> 
+<issue vtype="discrete" name="HardDisk" index="2" etype="discrete" type="discrete"> 
+<item index="1" value="256GB(0)"> 
+</item> 
+<item index="2" value="512GB(0)"> 
+</item> 
+<item index="3" value="1TB(0)"> 
+</item> 
+</issue> 
+<issue vtype="discrete" name="Monitor" index="3" etype="discrete" type="discrete"> 
+<item index="1" value="13(0)"> 
+</item> 
+<item index="2" value="15(0)"> 
+</item> 
+<item index="3" value="17(0)"> 
+</item> 
+</issue> 
+</objective> 
+</utility_space> 
+</negotiation_template> 

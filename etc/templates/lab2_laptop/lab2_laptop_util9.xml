@@ -1,0 +1,38 @@
+<utility_space> 
+<objective name="lab2_laptop" index="0" description="" etype="objective" type="objective"> 
+<issue vtype="discrete" name="Brand" index="1" etype="discrete" type="discrete"> 
+<item evaluation="4.0" index="1" value="Dell(0)"> 
+</item> 
+<item evaluation="0.0" index="2" value="HP(0)"> 
+</item> 
+<item evaluation="10.0" index="3" value="Apple(0)"> 
+</item> 
+</issue> 
+<issue vtype="discrete" name="HardDisk" index="2" etype="discrete" type="discrete"> 
+<item evaluation="1.0" index="1" value="256GB(0)"> 
+</item> 
+<item evaluation="2.0" index="2" value="512GB(0)"> 
+</item> 
+<item evaluation="10.0" index="3" value="1TB(0)"> 
+</item> 
+</issue> 
+<issue vtype="discrete" name="Monitor" index="3" etype="discrete" type="discrete"> 
+<item evaluation="10.0" index="1" value="13(0)"> 
+</item> 
+<item evaluation="5.0" index="2" value="15(0)"> 
+</item> 
+<item evaluation="6.0" index="3" value="17(0)"> 
+</item> 
+</issue> 
+<weight index="1" value="0.19727698113187617"> 
+</weight> 
+<weight index="2" value="0.09813582580986456"> 
+</weight> 
+<weight index="3" value="0.7045871930582592"> 
+</weight> 
+</objective> 
+<discount_factor value="1.0"> 
+</discount_factor> 
+<reservation value="0.0"> 
+</reservation> 
+</utility_space> 

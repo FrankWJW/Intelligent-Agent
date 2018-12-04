@@ -1,0 +1,6 @@
+1,1,0.25,ExampleAgent@0,(Offer  bid:Bid[Brand: HP(0), HardDisk: 256GB(0), Monitor: 17(0)])
+1,2,0.25,ExampleAgent@1,(Offer  bid:Bid[Brand: Dell(0), HardDisk: 512GB(0), Monitor: 15(0)])
+2,1,0.5,ExampleAgent@0,(Offer  bid:Bid[Brand: Dell(0), HardDisk: 1TB(0), Monitor: 13(0)])
+2,2,0.5,ExampleAgent@1,(Offer  bid:Bid[Brand: Dell(0), HardDisk: 1TB(0), Monitor: 15(0)])
+3,1,0.75,ExampleAgent@0,(Accept  bid:Bid[Brand: Dell(0), HardDisk: 1TB(0), Monitor: 15(0)])
+agreement,Bid[Brand: Dell(0), HardDisk: 1TB(0), Monitor: 15(0)],0.25994862401530394,0.8189879539899058

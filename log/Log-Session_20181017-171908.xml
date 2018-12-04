@@ -1,0 +1,11 @@
+<?xml version="1.0" ?><Session>
+<NegotiationOutcome exception="Failed to execute protocol: null" currentTime="Wed Oct 17 17:19:08 BST 2018" lastAction="(Accept  bid:Bid[Pie: a1000])" bids="4" runtime="0.043677903" deadline="500rounds">
+<resultsOfAgent agent="ExampleAgent" utilspace="etc/templates/pie/pie_A.xml" agentClass="C:\Users\Wang\ExampleAgent\out\production\ExampleAgent\ExampleAgent.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ImmediateAcceptor" utilspace="etc/templates/pie/pie_B.xml" agentClass="agents.ImmediateAcceptor" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="TimeDependentAgentHardliner" utilspace="etc/templates/pie/pie_B.xml" agentClass="agents.TimeDependentAgentHardliner" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent" utilspace="etc/templates/pie/pie_B.xml" agentClass="C:\Users\Wang\ExampleAgent\out\production\ExampleAgent\ExampleAgent.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome></Session>

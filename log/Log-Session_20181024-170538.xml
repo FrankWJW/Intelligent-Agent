@@ -1,0 +1,7 @@
+<?xml version="1.0" ?><Session>
+<NegotiationOutcome exception="Failed to execute protocol: Execution failed of ExampleAgent@56:java.lang.ClassCastException: genius.core.issue.IssueDiscrete cannot be cast to genius.core.issue.IssueInteger: genius.core.issue.IssueDiscrete cannot be cast to genius.core.issue.IssueInteger" currentTime="Wed Oct 24 17:05:38 BST 2018" lastAction="(Offer  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" bids="0" runtime="0.00335858" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util1.xml" agentClass="C:\Users\Wang\ExampleAgent\out\production\ExampleAgent\ExampleAgent.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="Group2Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util1.xml" agentClass="agents.anac.y2014.TUDelftGroup2.Group2Agent" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome></Session>

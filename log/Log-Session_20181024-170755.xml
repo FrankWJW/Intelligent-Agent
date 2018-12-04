@@ -1,0 +1,7 @@
+<?xml version="1.0" ?><Session>
+<NegotiationOutcome currentTime="Wed Oct 24 17:07:55 BST 2018" timeOfAgreement="0.5082872928176796" lastAction="(Accept  bid:Bid[Brand: Apple(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="183" runtime="0.164907959" finalOutcome="Bid[Brand: Apple(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="RandomParty@58" deadline="180rounds">
+<resultsOfAgent agent="RandomParty@58" agentDesc="Place random bids until 90% of time" utilspace="etc/templates/lab2_laptop/lab2_laptop_util1.xml" agentClass="negotiator.parties.RandomParty" finalUtility="0.5060908439547115" discountedUtility="0.5060908439547115" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@59" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util1.xml" agentClass="ExampleAgent" finalUtility="0.5060908439547115" discountedUtility="0.5060908439547115" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome></Session>

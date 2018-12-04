@@ -1,0 +1,11 @@
+<?xml version="1.0" ?><Session>
+<NegotiationOutcome exception="Failed to execute protocol: null" currentTime="Wed Oct 24 17:01:19 BST 2018" lastAction="(Accept  bid:Bid[Brand: HP(0), HardDisk: 1TB(0), Monitor: 15(0)])" bids="282" runtime="0.674780371" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util1.xml" agentClass="C:\Users\Wang\ExampleAgent\out\production\ExampleAgent\ExampleAgent.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="Atlas" utilspace="etc/templates/lab2_laptop/lab2_laptop_util1.xml" agentClass="agents.anac.y2014.Atlas.Atlas" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="RandomParty" utilspace="etc/templates/lab2_laptop/lab2_laptop_util1.xml" agentClass="negotiator.parties.RandomParty" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="RandomParty2" utilspace="etc/templates/lab2_laptop/lab2_laptop_util1.xml" agentClass="negotiator.parties.RandomParty2" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome></Session>

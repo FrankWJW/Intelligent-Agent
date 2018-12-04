@@ -1,0 +1,5 @@
+1,1,0.0055248618784530384,BoulwareNegotiationParty@52,(Offer  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])
+1,2,0.0055248618784530384,ConcederNegotiationParty@53,(Offer  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])
+2,1,0.011049723756906077,BoulwareNegotiationParty@52,(Offer  bid:Bid[Brand: HP(0), HardDisk: 256GB(0), Monitor: 17(0)])
+2,2,0.011049723756906077,ConcederNegotiationParty@53,(Accept  bid:Bid[Brand: HP(0), HardDisk: 256GB(0), Monitor: 17(0)])
+agreement,Bid[Brand: HP(0), HardDisk: 256GB(0), Monitor: 17(0)],1.0,1.0

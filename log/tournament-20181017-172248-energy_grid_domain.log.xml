@@ -1,0 +1,17 @@
+<?xml version="1.0" ?><Tournament>
+<NegotiationOutcome exception="Failed to execute protocol: domain does not match the negotiation domain" runtime="2.733759925" currentTime="Wed Oct 17 17:22:51 BST 2018" lastAction="(Accept  bid:Bid[a: a1, b: b1])" bids="564" deadline="180rounds">
+<resultsOfAgent agent="GrandmaAgent" utilspace="etc/templates/ANAC2016/AgentHp2/consumer.xml" agentClass="agents.anac.y2016.grandma.GrandmaAgent" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="GrandmaAgent" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util1.xml" agentClass="agents.anac.y2016.grandma.GrandmaAgent" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="GrandmaAgent" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util2.xml" agentClass="agents.anac.y2016.grandma.GrandmaAgent" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="GrandmaAgent" utilspace="etc/templates/ANAC2016/AgentLightSmartGrid/SmartEnergyGrid_util3.xml" agentClass="agents.anac.y2016.grandma.GrandmaAgent" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="GrandmaAgent" utilspace="etc/templates/ANAC2016/AgentSmith/DomainAce_util1.xml" agentClass="agents.anac.y2016.grandma.GrandmaAgent" finalUtility="0.3" discountedUtility="0.3" discount="0.2">
+</resultsOfAgent>
+<resultsOfAgent agent="GrandmaAgent" utilspace="etc/templates/ANAC2016/Atlas3/triangularFight_util1.xml" agentClass="agents.anac.y2016.grandma.GrandmaAgent" finalUtility="0.3" discountedUtility="0.3" discount="0.1">
+</resultsOfAgent>
+<resultsOfAgent agent="GrandmaAgent" utilspace="etc/templates/ANAC2016/Atlas3/triangularFight_util2.xml" agentClass="agents.anac.y2016.grandma.GrandmaAgent" finalUtility="0.3" discountedUtility="0.3" discount="0.1">
+</resultsOfAgent>
+</NegotiationOutcome>

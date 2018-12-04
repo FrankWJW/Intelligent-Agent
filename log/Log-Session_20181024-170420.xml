@@ -1,0 +1,7 @@
+<?xml version="1.0" ?><Session>
+<NegotiationOutcome currentTime="Wed Oct 24 17:04:20 BST 2018" timeOfAgreement="0.011049723756906077" lastAction="(Accept  bid:Bid[Brand: HP(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="3" runtime="0.007413796" finalOutcome="Bid[Brand: HP(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="BoulwareNegotiationParty@52" deadline="180rounds">
+<resultsOfAgent agent="BoulwareNegotiationParty@52" agentDesc="Time-based agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util1.xml" agentClass="negotiator.parties.BoulwareNegotiationParty" finalUtility="1.0" discountedUtility="1.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ConcederNegotiationParty@53" agentDesc="Time-based conceder" utilspace="etc/templates/lab2_laptop/lab2_laptop_util1.xml" agentClass="negotiator.parties.ConcederNegotiationParty" finalUtility="1.0" discountedUtility="1.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome></Session>

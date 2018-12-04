@@ -1,0 +1,9 @@
+<?xml version="1.0" ?><Session>
+<NegotiationOutcome exception="Failed to execute protocol: Execution failed of ExampleAgent@24:java.lang.NullPointerException: null" currentTime="Wed Oct 31 17:57:37 GMT 2018" lastAction="null" bids="0" runtime="0.022231208" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="C:\Users\Wang\ExampleAgent\out\production\ExampleAgent\ExampleAgent.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="C:\Users\Wang\ExampleAgent\out\production\ExampleAgent\ExampleAgent.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util9.xml" agentClass="C:\Users\Wang\ExampleAgent\out\production\ExampleAgent\ExampleAgent.class" finalUtility="0.0" discountedUtility="0.0" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome></Session>

@@ -1,0 +1,3 @@
+1,1,0.0055248618784530384,ExampleAgent@4,(Offer  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])
+1,2,0.0055248618784530384,TimeDependentAgentLinear@5,(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])
+agreement,Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)],1.0,1.0

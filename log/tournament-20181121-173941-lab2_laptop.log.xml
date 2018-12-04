@@ -1,0 +1,601 @@
+<?xml version="1.0" ?><Tournament>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:42 GMT 2018" timeOfAgreement="0.5138121546961326" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="184" runtime="0.133780415" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@0" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@0" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@1" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:42 GMT 2018" timeOfAgreement="0.5524861878453039" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="199" runtime="0.102124385" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@2" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@2" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@3" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:42 GMT 2018" timeOfAgreement="0.5580110497237569" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="201" runtime="0.096191452" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@4" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@4" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@5" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:42 GMT 2018" timeOfAgreement="0.5580110497237569" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="200" runtime="0.1009856" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@6" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@6" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@7" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:42 GMT 2018" timeOfAgreement="0.5580110497237569" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="201" runtime="0.099681435" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@8" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@8" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@9" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:42 GMT 2018" timeOfAgreement="0.5193370165745856" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="187" runtime="0.074826397" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@10" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@10" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@11" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:42 GMT 2018" timeOfAgreement="0.5138121546961326" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="185" runtime="0.078195177" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@12" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@12" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@13" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:43 GMT 2018" timeOfAgreement="0.6187845303867403" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="223" runtime="0.118412861" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)]" startingAgent="ExampleAgent@14" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@14" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8115157621506408" discountedUtility="0.8115157621506408" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@15" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7682877193340536" discountedUtility="0.7682877193340536" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:43 GMT 2018" timeOfAgreement="0.5359116022099447" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="193" runtime="0.096201646" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@16" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@16" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@17" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:43 GMT 2018" timeOfAgreement="0.5248618784530387" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="189" runtime="0.081376298" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@18" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@18" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@19" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:43 GMT 2018" timeOfAgreement="0.5193370165745856" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="187" runtime="0.081449549" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@20" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@20" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@21" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:43 GMT 2018" timeOfAgreement="0.574585635359116" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="206" runtime="0.086674141" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@22" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@22" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@23" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:43 GMT 2018" timeOfAgreement="0.5359116022099447" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="192" runtime="0.073188828" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@24" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@24" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@25" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:43 GMT 2018" timeOfAgreement="0.5193370165745856" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="187" runtime="0.079260711" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@26" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@26" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@27" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:43 GMT 2018" timeOfAgreement="0.5138121546961326" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="184" runtime="0.073368934" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@28" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@28" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@29" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:43 GMT 2018" timeOfAgreement="0.5359116022099447" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="193" runtime="0.077321076" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@30" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@30" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@31" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:44 GMT 2018" timeOfAgreement="0.5303867403314917" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="191" runtime="0.087870317" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@32" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@32" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@33" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:44 GMT 2018" timeOfAgreement="0.5469613259668509" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="196" runtime="0.078297502" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@34" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@34" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@35" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:44 GMT 2018" timeOfAgreement="0.5193370165745856" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="186" runtime="0.082975732" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@36" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@36" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@37" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:44 GMT 2018" timeOfAgreement="0.5193370165745856" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="186" runtime="0.088978896" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@38" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@38" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@39" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:44 GMT 2018" timeOfAgreement="0.5359116022099447" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="193" runtime="0.07390812" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@40" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@40" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@41" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:44 GMT 2018" timeOfAgreement="0.5524861878453039" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="198" runtime="0.097648538" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@42" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@42" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@43" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:44 GMT 2018" timeOfAgreement="0.5580110497237569" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="201" runtime="0.076640676" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@44" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@44" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@45" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:44 GMT 2018" timeOfAgreement="0.5248618784530387" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="188" runtime="0.088684383" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@46" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@46" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@47" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:45 GMT 2018" timeOfAgreement="0.6408839779005525" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="230" runtime="0.092221185" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@48" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@48" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@49" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:45 GMT 2018" timeOfAgreement="0.5414364640883977" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="194" runtime="0.075028403" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@50" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@50" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@51" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:45 GMT 2018" timeOfAgreement="0.56353591160221" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="203" runtime="0.079863708" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@52" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@52" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@53" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:45 GMT 2018" timeOfAgreement="0.5469613259668509" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="197" runtime="0.07538333" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@54" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@54" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@55" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:45 GMT 2018" timeOfAgreement="0.5359116022099447" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="193" runtime="0.087699273" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)]" startingAgent="ExampleAgent@56" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@56" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8115157621506408" discountedUtility="0.8115157621506408" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@57" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7682877193340536" discountedUtility="0.7682877193340536" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:45 GMT 2018" timeOfAgreement="0.5082872928176796" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="182" runtime="0.07359284" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@58" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@58" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@59" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:45 GMT 2018" timeOfAgreement="0.5248618784530387" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="188" runtime="0.078487048" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@60" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@60" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@61" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:45 GMT 2018" timeOfAgreement="0.5193370165745856" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="186" runtime="0.077383378" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@62" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@62" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@63" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:45 GMT 2018" timeOfAgreement="0.5248618784530387" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="188" runtime="0.071579577" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@64" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@64" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@65" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:46 GMT 2018" timeOfAgreement="0.5193370165745856" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="187" runtime="0.069343541" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@66" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@66" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@67" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:46 GMT 2018" timeOfAgreement="0.5303867403314917" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="191" runtime="0.074155435" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)]" startingAgent="ExampleAgent@68" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@68" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8115157621506408" discountedUtility="0.8115157621506408" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@69" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7682877193340536" discountedUtility="0.7682877193340536" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:46 GMT 2018" timeOfAgreement="0.5082872928176796" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="183" runtime="0.067752414" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@70" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@70" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@71" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:46 GMT 2018" timeOfAgreement="0.5414364640883977" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="195" runtime="0.074863401" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@72" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@72" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@73" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:46 GMT 2018" timeOfAgreement="0.569060773480663" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="205" runtime="0.077512888" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)]" startingAgent="ExampleAgent@74" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@74" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8115157621506408" discountedUtility="0.8115157621506408" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@75" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7682877193340536" discountedUtility="0.7682877193340536" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:46 GMT 2018" timeOfAgreement="0.5524861878453039" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="198" runtime="0.073200911" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@76" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@76" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@77" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:46 GMT 2018" timeOfAgreement="0.5082872928176796" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="182" runtime="0.067662173" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@78" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@78" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@79" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:46 GMT 2018" timeOfAgreement="0.5966850828729282" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="215" runtime="0.083492264" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)]" startingAgent="ExampleAgent@80" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@80" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8115157621506408" discountedUtility="0.8115157621506408" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@81" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7682877193340536" discountedUtility="0.7682877193340536" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:46 GMT 2018" timeOfAgreement="0.5138121546961326" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="185" runtime="0.068426396" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@82" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@82" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@83" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:46 GMT 2018" timeOfAgreement="0.5248618784530387" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="189" runtime="0.077546493" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@84" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@84" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@85" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:47 GMT 2018" timeOfAgreement="0.5193370165745856" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="186" runtime="0.068909322" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@86" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@86" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@87" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:47 GMT 2018" timeOfAgreement="0.5082872928176796" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="183" runtime="0.072024368" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@88" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@88" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@89" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:47 GMT 2018" timeOfAgreement="0.5193370165745856" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="187" runtime="0.071979058" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@90" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@90" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@91" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:47 GMT 2018" timeOfAgreement="0.5966850828729282" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="214" runtime="0.090015734" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@92" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@92" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@93" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:47 GMT 2018" timeOfAgreement="0.5469613259668509" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="196" runtime="0.073169571" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@94" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@94" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@95" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:47 GMT 2018" timeOfAgreement="0.5524861878453039" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="199" runtime="0.081212429" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)]" startingAgent="ExampleAgent@96" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@96" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8115157621506408" discountedUtility="0.8115157621506408" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@97" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7682877193340536" discountedUtility="0.7682877193340536" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:47 GMT 2018" timeOfAgreement="0.6464088397790055" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="233" runtime="0.085252169" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@98" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@98" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@99" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:47 GMT 2018" timeOfAgreement="0.5580110497237569" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="200" runtime="0.079631119" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@100" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@100" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@101" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:47 GMT 2018" timeOfAgreement="0.5303867403314917" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="190" runtime="0.070898798" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@102" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@102" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@103" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:47 GMT 2018" timeOfAgreement="0.6077348066298343" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="219" runtime="0.084444523" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@104" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@104" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@105" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:48 GMT 2018" timeOfAgreement="0.5082872928176796" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="183" runtime="0.078271449" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)]" startingAgent="ExampleAgent@106" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@106" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8115157621506408" discountedUtility="0.8115157621506408" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@107" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7682877193340536" discountedUtility="0.7682877193340536" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:48 GMT 2018" timeOfAgreement="0.5082872928176796" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="183" runtime="0.093814955" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@108" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@108" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@109" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:48 GMT 2018" timeOfAgreement="0.5193370165745856" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="187" runtime="0.069068285" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)]" startingAgent="ExampleAgent@110" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@110" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8115157621506408" discountedUtility="0.8115157621506408" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@111" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7682877193340536" discountedUtility="0.7682877193340536" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:48 GMT 2018" timeOfAgreement="0.5082872928176796" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="183" runtime="0.080598104" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@112" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@112" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@113" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:48 GMT 2018" timeOfAgreement="0.56353591160221" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="203" runtime="0.091567592" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@114" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@114" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@115" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:48 GMT 2018" timeOfAgreement="0.5248618784530387" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="189" runtime="0.072408368" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@116" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@116" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@117" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:48 GMT 2018" timeOfAgreement="0.5414364640883977" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="195" runtime="0.07767789" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)]" startingAgent="ExampleAgent@118" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@118" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8115157621506408" discountedUtility="0.8115157621506408" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@119" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7682877193340536" discountedUtility="0.7682877193340536" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:48 GMT 2018" timeOfAgreement="0.5082872928176796" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="183" runtime="0.071110621" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)]" startingAgent="ExampleAgent@120" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@120" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8115157621506408" discountedUtility="0.8115157621506408" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@121" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7682877193340536" discountedUtility="0.7682877193340536" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:48 GMT 2018" timeOfAgreement="0.5469613259668509" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="196" runtime="0.071902409" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@122" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@122" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@123" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:48 GMT 2018" timeOfAgreement="0.5138121546961326" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="184" runtime="0.071384746" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@124" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@124" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@125" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:48 GMT 2018" timeOfAgreement="0.580110497237569" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="209" runtime="0.081596051" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)]" startingAgent="ExampleAgent@126" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@126" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8115157621506408" discountedUtility="0.8115157621506408" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@127" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7682877193340536" discountedUtility="0.7682877193340536" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:49 GMT 2018" timeOfAgreement="0.6187845303867403" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="222" runtime="0.085309562" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@128" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@128" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@129" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:49 GMT 2018" timeOfAgreement="0.5193370165745856" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="186" runtime="0.070033004" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@130" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@130" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@131" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:49 GMT 2018" timeOfAgreement="0.6408839779005525" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="230" runtime="0.085587084" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@132" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@132" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@133" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:49 GMT 2018" timeOfAgreement="0.5193370165745856" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="186" runtime="0.071182739" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@134" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@134" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@135" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:49 GMT 2018" timeOfAgreement="0.5359116022099447" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="193" runtime="0.071228049" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@136" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@136" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@137" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:49 GMT 2018" timeOfAgreement="0.5524861878453039" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="199" runtime="0.079306021" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)]" startingAgent="ExampleAgent@138" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@138" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8115157621506408" discountedUtility="0.8115157621506408" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@139" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7682877193340536" discountedUtility="0.7682877193340536" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:49 GMT 2018" timeOfAgreement="0.5082872928176796" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="183" runtime="0.070998479" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@140" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@140" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@141" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:49 GMT 2018" timeOfAgreement="0.5359116022099447" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="193" runtime="0.074498657" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@142" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@142" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@143" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:49 GMT 2018" timeOfAgreement="0.6574585635359116" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="237" runtime="0.090741067" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@144" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@144" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@145" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:49 GMT 2018" timeOfAgreement="0.5248618784530387" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="188" runtime="0.075923271" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@146" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@146" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@147" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:50 GMT 2018" timeOfAgreement="0.5911602209944752" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="213" runtime="0.079324899" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)]" startingAgent="ExampleAgent@148" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@148" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8115157621506408" discountedUtility="0.8115157621506408" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@149" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7682877193340536" discountedUtility="0.7682877193340536" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:50 GMT 2018" timeOfAgreement="0.5248618784530387" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="189" runtime="0.069845346" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@150" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@150" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@151" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:50 GMT 2018" timeOfAgreement="0.5138121546961326" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="184" runtime="0.068674845" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@152" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@152" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@153" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:50 GMT 2018" timeOfAgreement="0.5082872928176796" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="183" runtime="0.074158457" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)]" startingAgent="ExampleAgent@154" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@154" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8115157621506408" discountedUtility="0.8115157621506408" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@155" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7682877193340536" discountedUtility="0.7682877193340536" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:50 GMT 2018" timeOfAgreement="0.5359116022099447" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="193" runtime="0.072147837" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@156" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@156" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@157" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:50 GMT 2018" timeOfAgreement="0.5248618784530387" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="188" runtime="0.076499837" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@158" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@158" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@159" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:50 GMT 2018" timeOfAgreement="0.5303867403314917" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="190" runtime="0.074986115" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@160" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@160" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@161" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:50 GMT 2018" timeOfAgreement="0.5524861878453039" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="199" runtime="0.075137903" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)]" startingAgent="ExampleAgent@162" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@162" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8115157621506408" discountedUtility="0.8115157621506408" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@163" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7682877193340536" discountedUtility="0.7682877193340536" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:50 GMT 2018" timeOfAgreement="0.5082872928176796" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="183" runtime="0.071659624" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@164" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@164" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@165" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:50 GMT 2018" timeOfAgreement="0.5193370165745856" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="186" runtime="0.071258255" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@166" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@166" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@167" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:50 GMT 2018" timeOfAgreement="0.5138121546961326" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="185" runtime="0.069416037" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@168" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@168" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@169" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:51 GMT 2018" timeOfAgreement="0.5414364640883977" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="194" runtime="0.088775002" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@170" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@170" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@171" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:51 GMT 2018" timeOfAgreement="0.5138121546961326" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="185" runtime="0.081981939" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)]" startingAgent="ExampleAgent@172" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@172" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8115157621506408" discountedUtility="0.8115157621506408" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@173" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7682877193340536" discountedUtility="0.7682877193340536" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:51 GMT 2018" timeOfAgreement="0.5469613259668509" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="196" runtime="0.069252544" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@174" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@174" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@175" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:51 GMT 2018" timeOfAgreement="0.5414364640883977" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="194" runtime="0.078507436" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@176" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@176" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@177" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:51 GMT 2018" timeOfAgreement="0.6519337016574586" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="235" runtime="0.085048653" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)]" startingAgent="ExampleAgent@178" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@178" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8115157621506408" discountedUtility="0.8115157621506408" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@179" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7682877193340536" discountedUtility="0.7682877193340536" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:51 GMT 2018" timeOfAgreement="0.5082872928176796" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="183" runtime="0.071275247" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@180" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@180" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@181" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:51 GMT 2018" timeOfAgreement="0.5414364640883977" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="195" runtime="0.076506634" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@182" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@182" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@183" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:51 GMT 2018" timeOfAgreement="0.5138121546961326" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="185" runtime="0.073020049" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@184" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@184" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@185" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:51 GMT 2018" timeOfAgreement="0.5082872928176796" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="183" runtime="0.068244025" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@186" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@186" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@187" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:51 GMT 2018" timeOfAgreement="0.5248618784530387" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="189" runtime="0.07525684" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@188" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@188" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@189" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:52 GMT 2018" timeOfAgreement="0.5082872928176796" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="183" runtime="0.071254858" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)]" startingAgent="ExampleAgent@190" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@190" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8115157621506408" discountedUtility="0.8115157621506408" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@191" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7682877193340536" discountedUtility="0.7682877193340536" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:52 GMT 2018" timeOfAgreement="0.56353591160221" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="203" runtime="0.076595366" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@192" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@192" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@193" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:52 GMT 2018" timeOfAgreement="0.569060773480663" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="205" runtime="0.089547156" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 15(0)]" startingAgent="ExampleAgent@194" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@194" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8212180535448242" discountedUtility="0.8212180535448242" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@195" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.85921285310326" discountedUtility="0.85921285310326" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:52 GMT 2018" timeOfAgreement="0.5248618784530387" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="189" runtime="0.070390951" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 13(0)]" startingAgent="ExampleAgent@196" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@196" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8115157621506408" discountedUtility="0.8115157621506408" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@197" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7682877193340536" discountedUtility="0.7682877193340536" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome>
+<NegotiationOutcome currentTime="Wed Nov 21 17:39:52 GMT 2018" timeOfAgreement="0.5469613259668509" lastAction="(Accept  bid:Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)])" domain="etc/templates/lab2_laptop/lab2_laptop.xml" bids="197" runtime="0.075135637" finalOutcome="Bid[Brand: Dell(0), HardDisk: 256GB(0), Monitor: 17(0)]" startingAgent="ExampleAgent@198" deadline="180rounds">
+<resultsOfAgent agent="ExampleAgent@198" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util7.xml" agentClass="ExampleAgent" finalUtility="0.8988363846982912" discountedUtility="0.8988363846982912" discount="1.0">
+</resultsOfAgent>
+<resultsOfAgent agent="ExampleAgent@199" agentDesc="Example Agent" utilspace="etc/templates/lab2_laptop/lab2_laptop_util8.xml" agentClass="ExampleAgent" finalUtility="0.7884933046160995" discountedUtility="0.7884933046160995" discount="1.0">
+</resultsOfAgent>
+</NegotiationOutcome></Tournament>
