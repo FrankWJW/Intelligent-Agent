@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ec8c68f-6ed4-47ec-a7cf-c8677ccc4e5f" name="Default Changelist" comment="">
+    <list default="true" id="0ec8c68f-6ed4-47ec-a7cf-c8677ccc4e5f" name="Default Changelist" comment="123">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< Updated upstream
-      <change beforePath="$PROJECT_DIR$/etc/templates/Domain4/Domain4_util1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/etc/templates/Domain4/Domain4_util1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etc/templates/Domain4/Domain4_util2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/etc/templates/Domain4/Domain4_util2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etc/templates/Domain4/Domain4_util5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/etc/templates/Domain4/Domain4_util5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etc/templates/Domain4/Domain4_util6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/etc/templates/Domain4/Domain4_util6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partyrepository.xml" beforeDir="false" afterPath="$PROJECT_DIR$/partyrepository.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Agent10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Agent10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExampleAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExampleAgent.java" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/etc/templates/lab2_laptop/lab2_laptop_util7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/etc/templates/lab2_laptop/lab2_laptop_util7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Agent10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Agent10.java" afterDir="false" />
->>>>>>> Stashed changes
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,51 +18,95 @@
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1696854287">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="16" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.14" value="3" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="17" />
+        </counts>
+      </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="1" />
+          <entry key="class" value="10" />
+          <entry key="java" value="7" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="1" />
+          <entry key="CLASS" value="10" />
+          <entry key="JAVA" value="7" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="class" value="1" />
+          <entry key="java" value="251" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="251" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1377381980">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.13" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="txt" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-52229421">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="91" />
+          <entry key="java" value="140" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="91" />
+          <entry key="JAVA" value="140" />
         </counts>
       </usages-collector>
-    </session>
-    <session id="1797982518">
-      <usages-collector id="statistics.lifecycle.project">
+      <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="java" value="2" />
         </counts>
       </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
+      <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="java" value="179" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="179" />
+          <entry key="JAVA" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -84,15 +119,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ExampleAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-            <state relative-caret-position="529">
-              <caret line="89" column="42" lean-forward="true" selection-start-line="89" selection-start-column="42" selection-end-line="89" selection-end-column="42" />
-=======
-            <state relative-caret-position="735">
-              <caret line="104" column="17" lean-forward="true" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
->>>>>>> Stashed changes
+            <state relative-caret-position="207">
+              <caret line="22" column="55" lean-forward="true" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="docComment;class#ExampleAgent#0" />
+                <element signature="method#init#0;class#ExampleAgent#0" />
               </folding>
             </state>
           </provider>
@@ -101,19 +133,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Agent10.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-            <state relative-caret-position="1433">
-              <caret line="102" column="13" lean-forward="true" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+            <state>
+              <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
               <folding>
-                <element signature="imports" expanded="true" />
-=======
-            <state relative-caret-position="118">
-              <caret line="141" column="30" lean-forward="true" selection-start-line="141" selection-start-column="30" selection-end-line="141" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4762#4763#0" expanded="true" />
-                <element signature="e#4796#4797#0" expanded="true" />
->>>>>>> Stashed changes
+                <element signature="e#5315#5316#0" expanded="true" />
+                <element signature="e#5349#5350#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,9 +161,6 @@
       <find>randomBid</find>
       <find>randomBid()</find>
     </findStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -147,24 +168,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/FrankAgent.java" />
         <option value="$PROJECT_DIR$/src/ExampleAgent.java" />
+        <option value="$PROJECT_DIR$/src/FrankAgent.java" />
         <option value="$PROJECT_DIR$/src/Agent10.java" />
       </list>
     </option>
   </component>
-<<<<<<< Updated upstream
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1666" />
-    <option name="y" value="-10" />
+    <option name="x" value="444" />
+    <option name="y" value="445" />
     <option name="width" value="981" />
-    <option name="height" value="1020" />
-=======
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="777" />
->>>>>>> Stashed changes
+    <option name="height" value="1031" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -186,11 +200,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-<<<<<<< Updated upstream
-=======
-      <pane id="PackagesPane" />
->>>>>>> Stashed changes
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -201,29 +210,45 @@
             <path>
               <item name="Intelligent-Agent" type="b2602c69:ProjectViewProjectNode" />
               <item name="Intelligent-Agent" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Intelligent-Agent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Intelligent-Agent" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Intelligent-Agent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Intelligent-Agent" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="ExampleAgent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Intelligent-Agent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Intelligent-Agent" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Intelligent-Agent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-<<<<<<< Updated upstream
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544013832523" />
-=======
-    </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544024934916" />
->>>>>>> Stashed changes
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544045837202" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/genius-9.1.2/genius-9.1.2.jar!/" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -284,27 +309,21 @@
       <option name="presentableId" value="Default" />
       <updated>1539790022744</updated>
     </task>
-    <task id="LOCAL-00001" summary="OK">
-      <created>1544004254772</created>
+    <task id="LOCAL-00001" summary="123">
+      <created>1544029501091</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1544004254772</updated>
+      <updated>1544029501092</updated>
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-<<<<<<< Updated upstream
-    <frame x="-8" y="-8" width="3856" height="1576" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49707603" visible="true" weight="0.27536997" />
-=======
-    <frame x="0" y="23" width="1280" height="777" extended-state="0" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49707603" visible="true" weight="0.2197092" />
->>>>>>> Stashed changes
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49707603" weight="0.3561644" />
       <window_info id="Structure" order="1" sideWeight="0.50292397" side_tool="true" weight="0.20489796" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -313,18 +332,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.37843138" />
-<<<<<<< Updated upstream
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959183" visible="true" weight="0.2275018" />
-=======
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49959183" visible="true" weight="0.15036497" />
->>>>>>> Stashed changes
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959183" weight="0.35882354" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5004082" side_tool="true" weight="0.11176471" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32907802" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32941177" />
       <window_info anchor="bottom" id="Problems" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -335,15 +350,14 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="right" id="Maven" order="8" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="OK" />
-    <option name="LAST_COMMIT_MESSAGE" value="OK" />
+    <MESSAGE value="123" />
+    <option name="LAST_COMMIT_MESSAGE" value="123" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
@@ -383,9 +397,6 @@
         </state>
       </provider>
     </entry>
-<<<<<<< Updated upstream
-    <entry file="file://$PROJECT_DIR$/out/production/ExampleAgent/ExampleAgent.class" />
-=======
     <entry file="file://$PROJECT_DIR$/out/production/ExampleAgent/ExampleAgent.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-247">
@@ -393,39 +404,41 @@
         </state>
       </provider>
     </entry>
->>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/out/production/ExampleAgent/FrankAgent.class" />
     <entry file="file://$PROJECT_DIR$/out/production/ExampleAgent/Agent10.class" />
     <entry file="file://$PROJECT_DIR$/src/ExampleAgent.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state relative-caret-position="529">
-          <caret line="89" column="42" lean-forward="true" selection-start-line="89" selection-start-column="42" selection-end-line="89" selection-end-column="42" />
-=======
-        <state relative-caret-position="735">
-          <caret line="104" column="17" lean-forward="true" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
->>>>>>> Stashed changes
+        <state relative-caret-position="207">
+          <caret line="22" column="55" lean-forward="true" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;class#ExampleAgent#0" />
+            <element signature="method#init#0;class#ExampleAgent#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15731">
+          <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/genius-9.1.2/genius-9.1.2.jar!/genius/core/issue/Issue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="42" column="4" lean-forward="true" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Agent10.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state relative-caret-position="1433">
-          <caret line="102" column="13" lean-forward="true" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+        <state>
+          <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
           <folding>
-            <element signature="imports" expanded="true" />
-=======
-        <state relative-caret-position="118">
-          <caret line="141" column="30" lean-forward="true" selection-start-line="141" selection-start-column="30" selection-end-line="141" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4762#4763#0" expanded="true" />
-            <element signature="e#4796#4797#0" expanded="true" />
->>>>>>> Stashed changes
+            <element signature="e#5315#5316#0" expanded="true" />
+            <element signature="e#5349#5350#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -488,17 +501,6 @@
               <list>
                 <option value="0.2" />
                 <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>

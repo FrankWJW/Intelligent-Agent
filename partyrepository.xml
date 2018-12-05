@@ -387,19 +387,7 @@
             <partyRepItem classPath="negotiator.parties.FeedbackHillClimber" strategyParameters="">
                 <properties/>
             </partyRepItem>
-            <partyRepItem classPath="C:\Users\Wang\ExampleAgent\out\production\ExampleAgent\ExampleAgent.class" strategyParameters="">
-                <properties/>
-            </partyRepItem>
-            <partyRepItem classPath="C:\Users\Wang\ExampleAgent\out\production\ExampleAgent\Agent10.class" strategyParameters="">
-                <properties/>
-            </partyRepItem>
-            <partyRepItem classPath="C:\Users\王隽文\IdeaProjects\Intelligent-Agent\out\production\ExampleAgent\Agent10.class" strategyParameters="">
-                <properties/>
-            </partyRepItem>
-            <partyRepItem classPath="C:\Users\王隽文\IdeaProjects\Intelligent-Agent\out\production\ExampleAgent\ExampleAgent.class" strategyParameters="">
-                <properties/>
-            </partyRepItem>
-            <partyRepItem classPath="/Users/mac/IdeaProjects/Intelligent-Agent/out/production/ExampleAgent/Agent10.class" strategyParameters="">
+            <partyRepItem classPath="C:\Users\Wang\Intelligent-Agent\out\production\ExampleAgent\Agent10.class" strategyParameters="">
                 <properties/>
             </partyRepItem>
         </partyRepItems>
