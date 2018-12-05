@@ -88,7 +88,8 @@ public class ExampleAgent extends AbstractNegotiationParty {
             // if the utility of the bid is higher than Example Agent's last bid.
             if (lastReceivedOffer != null
                     && myLastOffer != null
-                    && this.utilitySpace.getUtility(lastReceivedOffer) > this.utilitySpace.getUtility(myLastOffer)) {
+                    && this.utilitySpace.getUtility(lastReceivedOffer) > this.utilitySpace.getUtility(myLastOffer) &&
+                    this.utilitySpace.getUtility(lastReceivedOffer)>0.7) {
 
                 return new Accept(this.getPartyId(), lastReceivedOffer);
             } else {

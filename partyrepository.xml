@@ -393,6 +393,12 @@
             <partyRepItem classPath="C:\Users\Wang\ExampleAgent\out\production\ExampleAgent\Agent10.class" strategyParameters="">
                 <properties/>
             </partyRepItem>
+            <partyRepItem classPath="C:\Users\王隽文\IdeaProjects\Intelligent-Agent\out\production\ExampleAgent\Agent10.class" strategyParameters="">
+                <properties/>
+            </partyRepItem>
+            <partyRepItem classPath="C:\Users\王隽文\IdeaProjects\Intelligent-Agent\out\production\ExampleAgent\ExampleAgent.class" strategyParameters="">
+                <properties/>
+            </partyRepItem>
         </partyRepItems>
         <domainRepItem/>
         <protocolRepItem/>

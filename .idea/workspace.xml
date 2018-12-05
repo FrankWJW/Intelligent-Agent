@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ec8c68f-6ed4-47ec-a7cf-c8677ccc4e5f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/Log-Session_20181121-194441.csv" beforeDir="false" afterPath="$PROJECT_DIR$/log/Log-Session_20181121-194441.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/Log-Session_20181121-194441.xml" beforeDir="false" afterPath="$PROJECT_DIR$/log/Log-Session_20181121-194441.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/Log-Session_20181121-195538.csv" beforeDir="false" afterPath="$PROJECT_DIR$/log/Log-Session_20181121-195538.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/Log-Session_20181121-195538.xml" beforeDir="false" afterPath="$PROJECT_DIR$/log/Log-Session_20181121-195538.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/Log-Session_20181122-133017.csv" beforeDir="false" afterPath="$PROJECT_DIR$/log/Log-Session_20181122-133017.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/Log-Session_20181122-133017.xml" beforeDir="false" afterPath="$PROJECT_DIR$/log/Log-Session_20181122-133017.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ExampleAgent/FrankAgent.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/partyrepository.xml" beforeDir="false" afterPath="$PROJECT_DIR$/partyrepository.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FrankAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Agent10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExampleAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExampleAgent.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,63 +17,16 @@
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1696854287">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="16" />
-          <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.1" value="4" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.14" value="3" />
-          <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="17" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="10" />
-          <entry key="java" value="7" />
-          <entry key="xml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="10" />
-          <entry key="JAVA" value="7" />
-          <entry key="XML" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="class" value="1" />
-          <entry key="java" value="251" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.vcs.git.usages" />
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="251" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="ExampleAgent" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ExampleAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="140" column="17" lean-forward="true" selection-start-line="140" selection-start-column="17" selection-end-line="140" selection-end-column="17" />
+            <state relative-caret-position="472">
+              <caret line="91" column="72" selection-start-line="91" selection-start-column="72" selection-end-line="91" selection-end-column="72" />
               <folding>
                 <element signature="docComment;class#ExampleAgent#0" />
                 <element signature="method#init#0;class#ExampleAgent#0" />
@@ -90,16 +37,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Agent10.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="99" column="5" lean-forward="true" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
+            <state relative-caret-position="-684">
+              <caret line="33" column="76" lean-forward="true" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="docComment;method#chooseAction#0;class#FrankAgent#0" />
-                <element signature="e#4769#4770#0" expanded="true" />
-                <element signature="e#4803#4804#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,9 +74,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ExampleAgent.java" />
         <option value="$PROJECT_DIR$/src/FrankAgent.java" />
         <option value="$PROJECT_DIR$/src/Agent10.java" />
+        <option value="$PROJECT_DIR$/src/ExampleAgent.java" />
       </list>
     </option>
   </component>
@@ -166,47 +110,47 @@
         <subPane>
           <expand>
             <path>
-              <item name="ExampleAgent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExampleAgent" type="462c0819:PsiDirectoryNode" />
+              <item name="Intelligent-Agent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Intelligent-Agent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ExampleAgent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExampleAgent" type="462c0819:PsiDirectoryNode" />
+              <item name="Intelligent-Agent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Intelligent-Agent" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ExampleAgent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExampleAgent" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ExampleAgent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExampleAgent" type="462c0819:PsiDirectoryNode" />
+              <item name="Intelligent-Agent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Intelligent-Agent" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
               <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Intelligent-Agent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Intelligent-Agent" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
               <item name="ExampleAgent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ExampleAgent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExampleAgent" type="462c0819:PsiDirectoryNode" />
+              <item name="Intelligent-Agent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Intelligent-Agent" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543939177083" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544003998375" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/genius-9.1.2/genius-9.1.2.jar!/" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.kotlinCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -270,10 +214,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49707603" visible="true" weight="0.2677551" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49707603" visible="true" weight="0.27665246" />
       <window_info id="Structure" order="1" sideWeight="0.50292397" side_tool="true" weight="0.20489796" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -282,7 +226,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.37843138" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959183" weight="0.3627451" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49959183" visible="true" weight="0.22776572" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -300,25 +244,11 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Maven" order="8" />
     </layout>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LAST_COMMIT_MESSAGE" value="" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ExampleAgent.java</url>
-          <line>84</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
@@ -358,51 +288,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/ExampleAgent/ExampleAgent.class">
+    <entry file="file://$PROJECT_DIR$/out/production/ExampleAgent/ExampleAgent.class" />
+    <entry file="file://$PROJECT_DIR$/out/production/ExampleAgent/FrankAgent.class" />
+    <entry file="file://$PROJECT_DIR$/out/production/ExampleAgent/Agent10.class" />
+    <entry file="file://$PROJECT_DIR$/src/Agent10.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-247">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/ExampleAgent/FrankAgent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="66" column="55" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/ExampleAgent/Agent10.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="-684">
+          <caret line="33" column="76" lean-forward="true" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
           <folding>
-            <element signature="e#0#3888#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ExampleAgent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="140" column="17" lean-forward="true" selection-start-line="140" selection-start-column="17" selection-end-line="140" selection-end-column="17" />
+        <state relative-caret-position="472">
+          <caret line="91" column="72" selection-start-line="91" selection-start-column="72" selection-end-line="91" selection-end-column="72" />
           <folding>
             <element signature="docComment;class#ExampleAgent#0" />
             <element signature="method#init#0;class#ExampleAgent#0" />
             <element signature="e#4787#4788#0" expanded="true" />
             <element signature="e#4821#4822#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Agent10.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="99" column="5" lean-forward="true" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#chooseAction#0;class#FrankAgent#0" />
-            <element signature="e#4769#4770#0" expanded="true" />
-            <element signature="e#4803#4804#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -465,6 +372,17 @@
               <list>
                 <option value="0.2" />
                 <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
