@@ -80,7 +80,8 @@ public class ExampleAgent extends AbstractNegotiationParty {
 
 
         // First half of the negotiation offering the max utility (the best agreement possible) for Example Agent
-        if (time < 0.5) {
+        if (time > 0) {
+            System.out.println("new offer");
             return new Offer(this.getPartyId(), this.getMaxUtilityBid());
         } else {
 
@@ -89,8 +90,9 @@ public class ExampleAgent extends AbstractNegotiationParty {
             if (lastReceivedOffer != null
                     && myLastOffer != null
                     && this.utilitySpace.getUtility(lastReceivedOffer) > this.utilitySpace.getUtility(myLastOffer) &&
-                    this.utilitySpace.getUtility(lastReceivedOffer)>0.7) {
-
+                    (this.utilitySpace.getUtility(lastReceivedOffer)>0.7)) {
+                System.out.println("system want to make agreement\n");
+                System.out.println(this.utilitySpace.getUtility(lastReceivedOffer));
                 return new Accept(this.getPartyId(), lastReceivedOffer);
             } else {
                 // Offering a random bid

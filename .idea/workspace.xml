@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ec8c68f-6ed4-47ec-a7cf-c8677ccc4e5f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partyrepository.xml" beforeDir="false" afterPath="$PROJECT_DIR$/partyrepository.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataObjects/agents.anac.y2014.Atlas.Atlas_etc_templates_lab2_laptop_lab2_laptop_util1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ExampleAgent/ExampleAgent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExampleAgent/ExampleAgent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ExampleAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExampleAgent.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ExampleAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="91" column="72" selection-start-line="91" selection-start-column="72" selection-end-line="91" selection-end-column="72" />
+            <state relative-caret-position="320">
+              <caret line="119" column="5" lean-forward="true" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="5" />
               <folding>
                 <element signature="docComment;class#ExampleAgent#0" />
                 <element signature="method#init#0;class#ExampleAgent#0" />
@@ -145,7 +146,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544003998375" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544007090905" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/genius-9.1.2/genius-9.1.2.jar!/" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -211,11 +212,18 @@
       <option name="presentableId" value="Default" />
       <updated>1539790022744</updated>
     </task>
+    <task id="LOCAL-00001" summary="OK">
+      <created>1544004254772</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1544004254772</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49707603" visible="true" weight="0.27665246" />
       <window_info id="Structure" order="1" sideWeight="0.50292397" side_tool="true" weight="0.20489796" />
@@ -226,7 +234,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.37843138" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49959183" visible="true" weight="0.22776572" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959183" weight="0.22776572" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -248,7 +256,8 @@
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="OK" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
@@ -303,8 +312,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ExampleAgent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="91" column="72" selection-start-line="91" selection-start-column="72" selection-end-line="91" selection-end-column="72" />
+        <state relative-caret-position="320">
+          <caret line="119" column="5" lean-forward="true" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="5" />
           <folding>
             <element signature="docComment;class#ExampleAgent#0" />
             <element signature="method#init#0;class#ExampleAgent#0" />
