@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ec8c68f-6ed4-47ec-a7cf-c8677ccc4e5f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataObjects/agents.anac.y2014.Atlas.Atlas_etc_templates_lab2_laptop_lab2_laptop_util1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ExampleAgent/ExampleAgent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExampleAgent/ExampleAgent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/templates/Domain4/Domain4_util1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/etc/templates/Domain4/Domain4_util1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/templates/Domain4/Domain4_util2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/etc/templates/Domain4/Domain4_util2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/templates/Domain4/Domain4_util5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/etc/templates/Domain4/Domain4_util5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/templates/Domain4/Domain4_util6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/etc/templates/Domain4/Domain4_util6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Agent10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Agent10.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ExampleAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExampleAgent.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,31 +20,59 @@
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1696854287">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="91" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="91" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="ExampleAgent" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ExampleAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="119" column="5" lean-forward="true" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="5" />
+            <state relative-caret-position="529">
+              <caret line="89" column="42" lean-forward="true" selection-start-line="89" selection-start-column="42" selection-end-line="89" selection-end-column="42" />
               <folding>
                 <element signature="docComment;class#ExampleAgent#0" />
-                <element signature="method#init#0;class#ExampleAgent#0" />
-                <element signature="e#4787#4788#0" expanded="true" />
-                <element signature="e#4821#4822#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Agent10.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-684">
-              <caret line="33" column="76" lean-forward="true" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
+            <state relative-caret-position="1433">
+              <caret line="102" column="13" lean-forward="true" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,16 +106,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/FrankAgent.java" />
-        <option value="$PROJECT_DIR$/src/Agent10.java" />
         <option value="$PROJECT_DIR$/src/ExampleAgent.java" />
+        <option value="$PROJECT_DIR$/src/Agent10.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="579" />
-    <option name="y" value="27" />
+    <option name="x" value="1666" />
+    <option name="y" value="-10" />
     <option name="width" value="981" />
-    <option name="height" value="1032" />
+    <option name="height" value="1020" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -107,34 +137,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Intelligent-Agent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Intelligent-Agent" type="462c0819:PsiDirectoryNode" />
+              <item name="ExampleAgent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExampleAgent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Intelligent-Agent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Intelligent-Agent" type="462c0819:PsiDirectoryNode" />
+              <item name="ExampleAgent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExampleAgent" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Intelligent-Agent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Intelligent-Agent" type="462c0819:PsiDirectoryNode" />
+              <item name="ExampleAgent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExampleAgent" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
               <item name="production" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Intelligent-Agent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Intelligent-Agent" type="462c0819:PsiDirectoryNode" />
+              <item name="ExampleAgent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExampleAgent" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
               <item name="production" type="462c0819:PsiDirectoryNode" />
               <item name="ExampleAgent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Intelligent-Agent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Intelligent-Agent" type="462c0819:PsiDirectoryNode" />
+              <item name="ExampleAgent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExampleAgent" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -142,16 +173,15 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544007090905" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544013832523" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/genius-9.1.2/genius-9.1.2.jar!/" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.kotlinCompiler" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -223,9 +253,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="3856" height="1576" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49707603" visible="true" weight="0.27665246" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49707603" visible="true" weight="0.27536997" />
       <window_info id="Structure" order="1" sideWeight="0.50292397" side_tool="true" weight="0.20489796" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -234,7 +265,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.37843138" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959183" weight="0.22776572" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959183" visible="true" weight="0.2275018" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -254,6 +285,9 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="right" id="Maven" order="8" />
     </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="OK" />
@@ -300,25 +334,22 @@
     <entry file="file://$PROJECT_DIR$/out/production/ExampleAgent/ExampleAgent.class" />
     <entry file="file://$PROJECT_DIR$/out/production/ExampleAgent/FrankAgent.class" />
     <entry file="file://$PROJECT_DIR$/out/production/ExampleAgent/Agent10.class" />
-    <entry file="file://$PROJECT_DIR$/src/Agent10.java">
+    <entry file="file://$PROJECT_DIR$/src/ExampleAgent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-684">
-          <caret line="33" column="76" lean-forward="true" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
+        <state relative-caret-position="529">
+          <caret line="89" column="42" lean-forward="true" selection-start-line="89" selection-start-column="42" selection-end-line="89" selection-end-column="42" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#ExampleAgent#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExampleAgent.java">
+    <entry file="file://$PROJECT_DIR$/src/Agent10.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="119" column="5" lean-forward="true" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="5" />
+        <state relative-caret-position="1433">
+          <caret line="102" column="13" lean-forward="true" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
           <folding>
-            <element signature="docComment;class#ExampleAgent#0" />
-            <element signature="method#init#0;class#ExampleAgent#0" />
-            <element signature="e#4787#4788#0" expanded="true" />
-            <element signature="e#4821#4822#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

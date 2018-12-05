@@ -88,12 +88,17 @@ public class Agent10 extends AbstractNegotiationParty {
             // if the utility of the bid is higher than Example Agent's last bid.
             if (lastReceivedOffer != null
                     && myLastOffer != null
-                    && this.utilitySpace.getUtility(lastReceivedOffer) > this.utilitySpace.getUtility(myLastOffer)) {
-
+                    && this.utilitySpace.getUtility(lastReceivedOffer) > this.utilitySpace.getUtility(myLastOffer) &&
+                    (this.utilitySpace.getUtility(lastReceivedOffer)>0.7)) {
+                System.out.println("system want to make agreement at utility:\n");
+                System.out.println(this.utilitySpace.getUtility(lastReceivedOffer));
                 return new Accept(this.getPartyId(), lastReceivedOffer);
             } else {
                 // Offering a random bid
-                myLastOffer = generateRandomBid();
+                //myLastOffer = generateRandomBid();
+
+                // Offering a random bid with utility >0.7
+                myLastOffer = generateRandomBidWithUtility(0.7);
                 return new Offer(this.getPartyId(), myLastOffer);
             }
         }
