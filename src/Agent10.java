@@ -24,7 +24,7 @@ public class Agent10 extends AbstractNegotiationParty {
 
     private Bid lastReceivedOffer; // offer on the table
     private Bid myLastOffer;
-
+    private double threshold;
     @Override
     public void init(NegotiationInfo info) {
         super.init(info);
@@ -59,8 +59,11 @@ public class Agent10 extends AbstractNegotiationParty {
 //                System.out.println(issue.getName()+ ": " + bid.getValue(issue.getNumber()));
 //            }
 //        }
+        threshold = 1;
+        List <Issue> opponent_issues = issues;
+        for (Issue issue : issues){
 
-
+        }
     }
 
     /**
@@ -97,7 +100,10 @@ public class Agent10 extends AbstractNegotiationParty {
                 //myLastOffer = generateRandomBid();
 
                 // Offering a random bid with utility >0.7
-                myLastOffer = generateRandomBidWithUtility(0.7); //offer with utility lager than 0.7
+                myLastOffer = generateRandomBidWithUtility(threshold); //offer with utility lager than 0.7
+                if(threshold>0.7){
+                    threshold -= 0.05;
+                }
                 return new Offer(this.getPartyId(), myLastOffer);
             }
         }
