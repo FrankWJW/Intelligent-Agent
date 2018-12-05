@@ -24,11 +24,11 @@
 <item evaluation="10.0" index="3" value="17(0)"> 
 </item> 
 </issue> 
-<weight index="1" value="0.10116361530170881"> 
+<weight index="1" value="0.10116581562284463"> 
 </weight> 
-<weight index="2" value="0.8018134707564575"> 
+<weight index="2" value="0.801813289040051"> 
 </weight> 
-<weight index="3" value="0.09702291394183368"> 
+<weight index="3" value="0.09702089533710445"> 
 </weight> 
 </objective> 
 <discount_factor value="1.0"> 

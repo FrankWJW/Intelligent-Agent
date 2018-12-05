@@ -78,7 +78,6 @@ public class Agent10 extends AbstractNegotiationParty {
         // The time is normalized, so agents need not be
         // concerned with the actual internal clock.
 
-
         // First half of the negotiation offering the max utility (the best agreement possible) for Example Agent
         if (time < 0.5) {
             return new Offer(this.getPartyId(), this.getMaxUtilityBid());
@@ -98,7 +97,7 @@ public class Agent10 extends AbstractNegotiationParty {
                 //myLastOffer = generateRandomBid();
 
                 // Offering a random bid with utility >0.7
-                myLastOffer = generateRandomBidWithUtility(0.7);
+                myLastOffer = generateRandomBidWithUtility(0.7); //offer with utility lager than 0.7
                 return new Offer(this.getPartyId(), myLastOffer);
             }
         }
@@ -138,6 +137,15 @@ public class Agent10 extends AbstractNegotiationParty {
         }
         return null;
     }
+
+    /**
+     * Beware that if utilityThreshold is really high (e.g. 0.9),
+     * there might not be a possible offer in given preference profile.
+     * To be safe, compare your utilityThreshold with MaxUtility
+     *
+     * @param utilityThreshold
+     * @return
+     */
     public Bid generateRandomBidWithUtility(double utilityThreshold) {
         Bid randomBid;
         double utility;
