@@ -1,18 +1,25 @@
 import genius.core.AgentID;
 import genius.core.Bid;
+import genius.core.Domain;
 import genius.core.actions.Accept;
 import genius.core.actions.Action;
 import genius.core.actions.Offer;
 import genius.core.issue.Issue;
 import genius.core.issue.IssueDiscrete;
+import genius.core.issue.Objective;
 import genius.core.issue.ValueDiscrete;
 import genius.core.parties.AbstractNegotiationParty;
 import genius.core.parties.NegotiationInfo;
+import genius.core.uncertainty.AdditiveUtilitySpaceFactory;
+import genius.core.uncertainty.BidRanking;
 import genius.core.utility.AbstractUtilitySpace;
 import genius.core.utility.AdditiveUtilitySpace;
+import genius.core.utility.Evaluator;
 import genius.core.utility.EvaluatorDiscrete;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * ExampleAgent returns the bid that maximizes its own utility for half of the negotiation session.
@@ -25,12 +32,12 @@ public class Agent10 extends AbstractNegotiationParty {
     private Bid lastReceivedOffer; // offer on the table
     private Bid myLastOffer;
     private double threshold;
+    private int iterator;
     @Override
     public void init(NegotiationInfo info) {
         super.init(info);
-        AbstractUtilitySpace utilitySpace = info.getUtilitySpace();
+        AbstractUtilitySpace utilitySpace = estimateUtilitySpace();
         AdditiveUtilitySpace additiveUtilitySpace = (AdditiveUtilitySpace) utilitySpace;
-
         List< Issue > issues = additiveUtilitySpace.getDomain().getIssues();
 
         for (Issue issue : issues) {
@@ -52,18 +59,28 @@ public class Agent10 extends AbstractNegotiationParty {
             }
         }
 
+//        iterator = 0;
 //        List<Bid> bids = userModel.getBidRanking().getBidOrder();
 //        for (Bid bid : bids) {
 //            List<Issue> issuesList = bid.getIssues();
-//            for (Issue issue : issuesList){
-//                System.out.println(issue.getName()+ ": " + bid.getValue(issue.getNumber()));
+//            for (Issue issue : issuesList) {
+////                System.out.println(issue.getName() + ": " + bid.getValue(issue.getNumber()));
 //            }
+//            iterator += 1;
 //        }
-        threshold = 1;
-        List <Issue> opponent_issues = issues;
-        for (Issue issue : issues){
+//        System.out.println("number of ranking: " + iterator);
 
-        }
+//        factory.estimateUsingBidRanks(userModel.getBidRanking());
+//        AbstractUtilitySpace utilitySpace = factory.getUtilitySpace();
+//        AdditiveUtilitySpace additiveUtilitySpace = (AdditiveUtilitySpace) utilitySpace;
+//        List<Issue> issues = additiveUtilitySpace.getDomain().getIssues();
+//
+//        for (Issue issue : issues) {
+//            int issueNumber = issue.getNumber();
+//            System.out.println(">> " + issue.getName() + " weight: " + additiveUtilitySpace.getWeight(issueNumber));
+//        }
+
+        threshold = 1;                                      //generate offer with threshold: initial: 1
     }
 
     /**
@@ -167,5 +184,17 @@ public class Agent10 extends AbstractNegotiationParty {
         while (utility < utilityThreshold);
         return randomBid;
     }
+
+    @Override
+    public AbstractUtilitySpace estimateUtilitySpace() {
+        //Old function that not work really well
+        Domain domain = getDomain();
+        AdditiveUtilitySpaceFactory factory = new AdditiveUtilitySpaceFactory(domain);
+        BidRanking bidRanking = userModel.getBidRanking();
+        factory.estimateUsingBidRanks(bidRanking);
+        return factory.getUtilitySpace();
+//        return new AdditiveUtilitySpaceFactory(getDomain()).getUtilitySpace();
+    }
+
 }
 
