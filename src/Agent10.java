@@ -1,3 +1,4 @@
+import agents.org.apache.commons.lang.ArrayUtils;
 import genius.core.AgentID;
 import genius.core.Bid;
 import genius.core.Domain;
@@ -17,9 +18,7 @@ import genius.core.utility.AdditiveUtilitySpace;
 import genius.core.utility.Evaluator;
 import genius.core.utility.EvaluatorDiscrete;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * ExampleAgent returns the bid that maximizes its own utility for half of the negotiation session.
@@ -29,14 +28,159 @@ import java.util.Map;
 public class Agent10 extends AbstractNegotiationParty {
     private final String description = "Agent10";
 
+    // ************************************************************************************
+    // *************** Private Class used to estimate self model *******************
+    // ************************************************************************************
+    private class agentModel {
+        private double Issues [][];
+        private double Weights [];
+        public int frequency [][];
+        private int N_issues;
+        private int N_values;
+        private int maximum_freqs [];
+        private int weight_ranking[];
+        private int value_ranking[];
+
+        //Initial opponentModel
+        public agentModel(int num_issues, int num_values, int [][] freq) {
+            Issues = new double [num_issues][num_values]; //Initial opponentModel
+            Weights = new double [num_issues]; //每一个issues一个weight
+            frequency = freq; //2D array
+            N_issues = num_issues; //the number of issues
+            N_values = num_values; //the number of values for each issues
+            maximum_freqs = new int[N_issues];
+            weight_ranking = new int [N_issues];
+            value_ranking = new int [N_values];
+        }
+
+        public void updateModel() {
+            //System.out.println("");
+            int j = 0;
+            int k = 0;
+            int i = 0;
+            for(i = 0; i < N_issues; i++) {
+                maximum_freqs[i] = Collections.max(Arrays.asList(ArrayUtils.toObject(frequency[i])));
+                if(maximum_freqs[i] == 0) {
+                    maximum_freqs[i] = 1;
+                }
+
+                //根据得到的频率排列issues的顺序，weight ranking[]
+                weight_ranking[i] = N_issues-i;
+                j = i - 1; //从第二个开始，对每一个和前一个的频率进行比较
+                while(j != -1) {
+                    if(maximum_freqs[i] > maximum_freqs[j]) {
+                        weight_ranking[i] = Math.max(weight_ranking[j], weight_ranking[i]); //频率大的排在前面
+                        weight_ranking[j]--; //频率小的排在后边
+                    }
+                    j--; //为了遍历所有frequency值，跳出while循环
+                }
+                //System.out.format("\nIndex %d, Maximum Frequency = %d\n", i, maximum_freqs[i]);
+
+                //排好issues以后对地i个issues里的value进行排序，同样根据频率
+                for(j = 0; j < N_values; j++) {
+                    value_ranking[j] = N_values-j;
+                    k = j - 1;
+                    while(k != -1) {
+                        if(frequency[i][j] > frequency[i][k]) {
+                            value_ranking[j]++; //频率大的排在前面
+                            value_ranking[k]--; //频率大的排在前面
+                        }
+                        if(frequency[i][j] == frequency[i][k]) {
+                            value_ranking[k]--;
+                            value_ranking[j] = Math.min(value_ranking[k], value_ranking[j]);
+                        }
+                        k--; //为了遍历所有frequency值，跳出while循环
+                    }
+                }
+
+                //issues[i][j]是第i个issues里有j个value
+                //对values赋值
+                for(j = 0; j < N_values; j++) {
+                    Issues[i][j] = value_ranking[j]*1.0/N_values;
+                }
+            }
+
+            //每一个issues对应一个weight值
+            for(i = 0; i < N_issues; i++) {
+                Weights[i] = 2.0*weight_ranking[i]/(N_issues*(N_issues+1.0));
+            }
+        }
+
+        //Design a utility for comparing
+        public double predictUtility(Bid bid) {
+            double U = 0.0;
+            for(Issue issue: bid.getIssues()) {
+                U = U +
+                        Issues[issue.getNumber()-1][((IssueDiscrete) issue).getValueIndex((ValueDiscrete)(bid.getValue(issue.getNumber())))] *
+                                Weights[issue.getNumber()-1];
+            }
+            //System.out.format("\n\nPredicted utility = %f", U);
+            return U;
+        }
+
+        //Get the maximum value for 第issue_index个issue
+        public int getIssueMaxValueIndex(int issue_index) {
+            int max_index = 0;
+            for(int i = 0; i < N_values; i++) {
+                if(Issues[issue_index][max_index] < Issues[issue_index][i]) {
+                    max_index = i;
+                }
+            }
+            return max_index; //找出第几个是最大的
+        }
+
+        //get each value for every issue
+        public double getIssueValue(int issue_index, int value_index) {
+            return Issues[issue_index][value_index];
+        }
+
+        //get each value for every issue
+        public double getWeight(int issue_index) {
+            return Weights[issue_index];
+        }
+    };
+
+    // **************************************************************************************************
+    // **************************************************************************************************
+    private agentModel selfModel;
+    private agentModel opponetModel;
+
     private Bid lastReceivedOffer; // offer on the table
     private Bid myLastOffer;
-    private double threshold;
-    private int iterator;
+    private Bid maxUtilityOffer;
+    private Bid minUtilityOffer;
+
+    //parameters used to compute the target utility
+    private double Umax;
+    private double Umin;
+    private double k;
+    private double b;
+
+    //for collecting opponent data
+    private int hashcode_a;
+    private int hashcode_b;
+    private int number_of_issues; // introduced this to aid in simulated annealing process ..
+
+    private 	int max_num_of_values;
+
+    Bid curr_bid ;
+    private java.util.List<Issue> domain_issues;
+    private java.util.List<ValueDiscrete> values;
+    private EvaluatorDiscrete evaluator;
+
+    // Two dimensional array, number of issues times number of max number of values ...
+    int freq_a [][];
+    int freq_b [][];
+    double max_weight = 0; //让max最小，min最大以便更新
+    double min_weight = 1;
+
+    AdditiveUtilitySpace additiveUtilitySpace_i;
+    int max_weight_number =1 ;
+    double panic;
     @Override
     public void init(NegotiationInfo info) {
         super.init(info);
-        AbstractUtilitySpace utilitySpace = estimateUtilitySpace();
+        AbstractUtilitySpace utilitySpace = estimateUtilitySpace_a10();
         AdditiveUtilitySpace additiveUtilitySpace = (AdditiveUtilitySpace) utilitySpace;
         List< Issue > issues = additiveUtilitySpace.getDomain().getIssues();
 
@@ -50,24 +194,25 @@ public class Agent10 extends AbstractNegotiationParty {
 
             for (ValueDiscrete valueDiscrete : issueDiscrete.getValues()) {
                 System.out.println(valueDiscrete.getValue());
-                System.out.println("Evaluation(getValue): " + evaluatorDiscrete.getValue(valueDiscrete));
+//                System.out.println("Evaluation(getValue): " + evaluatorDiscrete.getValue(valueDiscrete));
                 try {
-                    System.out.println("Evaluation(getEvaluation): " + evaluatorDiscrete.getEvaluation(valueDiscrete));
+//                    System.out.println("Evaluation(getEvaluation): " + evaluatorDiscrete.getEvaluation(valueDiscrete));
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
         }
 
-//        iterator = 0;
-//        List<Bid> bids = userModel.getBidRanking().getBidOrder();
-//        for (Bid bid : bids) {
-//            List<Issue> issuesList = bid.getIssues();
+        List<Bid> bids = userModel.getBidRanking().getBidOrder();
+        for (Bid bid : bids) {
+            List<Issue> issuesList = bid.getIssues();
+//            System.out.println("this is Bid "+bid.getValue(1)+" "+bid.getValue(2)+" "+bid.getValue(3));
 //            for (Issue issue : issuesList) {
-////                System.out.println(issue.getName() + ": " + bid.getValue(issue.getNumber()));
+//                System.out.println(issue.getName() + ": " + bid.getValue(issue.getNumber()));
+//                System.out.println(issue.getNumber()+"*****************************");
 //            }
-//            iterator += 1;
-//        }
+        }
+
 //        System.out.println("number of ranking: " + iterator);
 
 //        factory.estimateUsingBidRanks(userModel.getBidRanking());
@@ -80,7 +225,6 @@ public class Agent10 extends AbstractNegotiationParty {
 //            System.out.println(">> " + issue.getName() + " weight: " + additiveUtilitySpace.getWeight(issueNumber));
 //        }
 
-        threshold = 1;                                      //generate offer with threshold: initial: 1
     }
 
     /**
@@ -117,10 +261,7 @@ public class Agent10 extends AbstractNegotiationParty {
                 //myLastOffer = generateRandomBid();
 
                 // Offering a random bid with utility >0.7
-                myLastOffer = generateRandomBidWithUtility(threshold); //offer with utility lager than 0.7
-                if(threshold>0.7){
-                    threshold -= 0.05;
-                }
+                myLastOffer = generateRandomBidWithUtility(0.7); //offer with utility lager than 0.7
                 return new Offer(this.getPartyId(), myLastOffer);
             }
         }
@@ -185,15 +326,75 @@ public class Agent10 extends AbstractNegotiationParty {
         return randomBid;
     }
 
-    @Override
-    public AbstractUtilitySpace estimateUtilitySpace() {
-        //Old function that not work really well
+//    @Override
+//    public AbstractUtilitySpace estimateUtilitySpace() {
+//        //Old function that not work really well
+//        Domain domain = getDomain();
+//        AdditiveUtilitySpaceFactory factory = new AdditiveUtilitySpaceFactory(domain);
+//        BidRanking r = userModel.getBidRanking();
+//
+//        //copy codes from AdditiveUtilitySpaceFactory.estimateUsingBidRanks
+//        double points = 0;
+//        for (Bid b : r.getBidOrder())
+//        {
+//            List<Issue> issues = b.getIssues();
+//            for (Issue i : issues)
+//            {
+//                int no = i.getNumber();
+//                ValueDiscrete v = (ValueDiscrete) b.getValue(no);
+//                double oldUtil = factory.getUtility(i, v);
+////                System.out.println("old utility of "+i.getName()+i.getNumber()+": "+oldUtil);
+//                factory.setUtility(i, v, oldUtil + points);
+//            }
+//            points += 1;
+//        }
+//        factory.normalizeWeightsByMaxValues();
+//
+//        return factory.getUtilitySpace();
+////        return new AdditiveUtilitySpaceFactory(getDomain()).getUtilitySpace();
+//    }
+
+    public AbstractUtilitySpace estimateUtilitySpace_a10() {
+        //定义一个double型的二维数组，用来存放K值
+        //Mun[m][n],m是issue的个数，n是value的个数
+        double Num[][];
+        //获取进来的domain
         Domain domain = getDomain();
+        //根据domain生成factory
         AdditiveUtilitySpaceFactory factory = new AdditiveUtilitySpaceFactory(domain);
-        BidRanking bidRanking = userModel.getBidRanking();
-        factory.estimateUsingBidRanks(bidRanking);
+        //usermodel生成一个BidRanking，里面都是一个个bid,放到r里
+        BidRanking r = userModel.getBidRanking();
+        //计算一共有多少个bid,赋值给totalnum
+        int totalnum = r.getBidOrder().size();
+        System.out.println("totalnum:"+totalnum);
+        double points = 0;
+        for (Bid b : r.getBidOrder()) {
+
+            List<Issue> issues = b.getIssues();
+            int m=issues.size();
+//            List<Issue> issuesList = bid.getIssues();
+ //           System.out.println("this is Bid "+b.getValue(1)+" "+b.getValue(2)+" "+b.getValue(3));
+            for (Issue issue : issues) {
+                //int n=issue
+                System.out.println(issue.getName() + ": " + b.getValue(issue.getNumber()));
+                System.out.println(issue.getNumber()+"*****************************");
+            }
+
+            /////////////////////////////////////////
+            for (Issue i : issues) {
+                int no = i.getNumber();
+                ValueDiscrete v = (ValueDiscrete) b.getValue(no);
+                double oldUtil = factory.getUtility(i, v);
+//                System.out.println("old utility of "+i.getName()+i.getNumber()+": "+oldUtil);
+                factory.setUtility(i, v, oldUtil + points);
+            }
+            points += 1;
+        }
+        factory.normalizeWeightsByMaxValues();
+
         return factory.getUtilitySpace();
 //        return new AdditiveUtilitySpaceFactory(getDomain()).getUtilitySpace();
+
     }
 
 }
