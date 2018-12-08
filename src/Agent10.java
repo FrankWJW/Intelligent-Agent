@@ -5,10 +5,7 @@ import genius.core.Domain;
 import genius.core.actions.Accept;
 import genius.core.actions.Action;
 import genius.core.actions.Offer;
-import genius.core.issue.Issue;
-import genius.core.issue.IssueDiscrete;
-import genius.core.issue.Objective;
-import genius.core.issue.ValueDiscrete;
+import genius.core.issue.*;
 import genius.core.parties.AbstractNegotiationParty;
 import genius.core.parties.NegotiationInfo;
 import genius.core.uncertainty.AdditiveUtilitySpaceFactory;
@@ -202,15 +199,100 @@ public class Agent10 extends AbstractNegotiationParty {
                 }
             }
         }
-
         List<Bid> bids = userModel.getBidRanking().getBidOrder();
-        for (Bid bid : bids) {
-            List<Issue> issuesList = bid.getIssues();
-//            System.out.println("this is Bid "+bid.getValue(1)+" "+bid.getValue(2)+" "+bid.getValue(3));
-//            for (Issue issue : issuesList) {
-//                System.out.println(issue.getName() + ": " + bid.getValue(issue.getNumber()));
-//                System.out.println(issue.getNumber()+"*****************************");
+        int numberOfBids=bids.size();
+        int numberOfIssue=bids.get(0).getIssues().size();
+       // System.out.println("多少个issue："+numberOfIssue);
+        Value[][] bid_Array=new Value[numberOfBids][numberOfIssue];
+       // System.out.println("total Bids: "+numberOfBids);
+        for (int i = 0; i < numberOfBids; i++) {
+            for (int j = 0; j < numberOfIssue; j++) {
+                bid_Array[i][j]=bids.get(i).getValue(j+1);
+               // System.out.println("i,j"+bid_Array[i][j]);
+            }
+        }
+        //int[][] freq_table=new int[numberOfIssue][];
+        Value flag[]=new Value[numberOfBids];
+        int type[]=new int[numberOfIssue];
+        Map<Value,Integer> map_issuemax = new HashMap<Value, Integer>();
+
+        for (int j = 0; j < numberOfIssue; j++) {
+            for (int i = 0; i < numberOfBids; i++) {
+                //记录下每列第i个value
+                flag[i] = bid_Array[i][j];
+            }
+            Map<Value,Integer> map = new HashMap<Value, Integer>();
+            for (Value val:flag){
+                Integer num=map.get(val);
+                //key是唯一的
+                map.put(val,num==null?1:num+1);
+            }
+            for (Map.Entry<Value, Integer> entry : map.entrySet()) {
+                System.out.println("单词 " + entry.getKey() + " 出现次数 :" + entry.getValue());
+                type[j]++;
+            }
+            List<Map.Entry<Value, Integer>> infoIds = new ArrayList<Map.Entry<Value, Integer>>(map.entrySet());
+            Collections.sort(infoIds, new Comparator<Map.Entry<Value, Integer>>() {
+                public int compare(Map.Entry<Value, Integer> o1,
+                                   Map.Entry<Value, Integer> o2) {
+                    return (o1.getValue()).toString().compareTo(o2.getValue().toString());
+                }
+            });
+            //这里的max指的是一个issue中坚持次数最多的那个value
+            //value坚持越多，说明该issue越重要
+            System.out.print("max:"+infoIds.get(infoIds.size()-1)+"\n");
+
+            map_issuemax.put(infoIds.get(infoIds.size()-1).getKey(),infoIds.get(infoIds.size()-1).getValue());
+
+            List<Map.Entry<Value, Integer>> infoIds_issuemax = new ArrayList<Map.Entry<Value, Integer>>(map_issuemax.entrySet());
+            Collections.sort(infoIds_issuemax, new Comparator<Map.Entry<Value, Integer>>() {
+                public int compare(Map.Entry<Value, Integer> o1,
+                                   Map.Entry<Value, Integer> o2) {
+                    return (o1.getValue()).toString().compareTo(o2.getValue().toString());
+                }
+            });
+                        //输出最大utility的一行
+            for (int i = 0; i < infoIds_issuemax.size(); i++) {
+                String id = infoIds_issuemax.get(i).toString();
+                System.out.print(id + "  ");
+            }
+//            //这里的i指的是一个issue有多少个value
+//            for (int i = 0; i < infoIds.size(); i++) {
+//                String id = infoIds.get(i).toString();
+//                //System.out.print(id + "  ");
 //            }
+            System.out.println("这个issue有"+type[j]+"个value");
+           // item[type[j]]
+        }
+
+//        Value record_col[];
+//        int count=0;
+//        for (int j = 0; j < numberOfIssue; j++) {
+//            for (int i = 0; i < numberOfBids; i++) {
+//                //记录下每列第一个value
+//                record_col[i]=bid_Array[i][j];
+//                if(bid_Array[i+1][j]==record_col&&(i+1)<numberOfBids){
+//                    count++;
+//                }
+//
+//            }
+//        }
+        for (Bid bid : bids) {
+
+            List<Issue> issuesList = bid.getIssues();
+            //int numberOfIssue=issuesList.size();
+          //  double[][] bid_Array=new double[numberOfBids][numberOfIssue];
+           // System.out.println("this is Bid "+bid.getValue(1)+" "+bid.getValue(2)+" "+bid.getValue(3));
+           // System.out.println("一共有"+numberOfIssue+"个issue");
+            for (Issue issue : issuesList) {
+                System.out.println("第几个issue："+issue.getNumber() + "这个issue对应的value:" + bid.getValue(issue.getNumber()));
+
+                //System.out.println(+"*****************************");
+            }
+        }
+
+        for (int i = 0; i < numberOfBids; i++) {
+
         }
 
 //        System.out.println("number of ranking: " + iterator);
@@ -226,6 +308,12 @@ public class Agent10 extends AbstractNegotiationParty {
 //        }
 
     }
+    /**
+     * 
+     * 功能://统计数组中重复元素的个数
+     * @param array
+     * void
+     */
 
     /**
      * When this function is called, it is expected that the Party chooses one of the actions from the possible
