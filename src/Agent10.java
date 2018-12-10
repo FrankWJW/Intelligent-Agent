@@ -1,10 +1,12 @@
 import genius.core.AgentID;
 import genius.core.Bid;
+import genius.core.BidHistory;
 import genius.core.Domain;
 import genius.core.actions.Accept;
 import genius.core.actions.Action;
 import genius.core.actions.Offer;
 import genius.core.issue.Issue;
+import genius.core.issue.Value;
 import genius.core.issue.ValueDiscrete;
 import genius.core.parties.AbstractNegotiationParty;
 import genius.core.parties.NegotiationInfo;
@@ -14,188 +16,387 @@ import genius.core.uncertainty.AdditiveUtilitySpaceFactory;
 import genius.core.uncertainty.BidRanking;
 import genius.core.utility.AbstractUtilitySpace;
 import genius.core.utility.AdditiveUtilitySpace;
+import genius.core.utility.EvaluatorDiscrete;
 
 import java.util.*;
 
 /**
- * ExampleAgent returns the bid that maximizes its own utility for half of the negotiation session.
- * In the second half, it offers a random bid. It only accepts the bid on the table in this phase,
- * if the utility of the bid is higher than Example Agent's last bid.
+ * Agent 10 offers the bid with maximum utility for half of the negotiation.
+ * In the second half, it offers a random bid, which has utility higher than minimum expected utility.
+ * It only accepts offer if the utility of the bid is higher than Agent's last offered bid.
  */
 public class Agent10 extends AbstractNegotiationParty {
     private final String description = "Agent10";
-    // Latest bid received by the opponents
-    private Bid lastReceivedBid = null;
 
-    // Map of the opponents
-    private HashMap<AgentID, Opponent> opponentsMap;
-    // Percentage of time in which we'll just keep offering the maximum utility bid
-    private double TIME_OFFERING_MAX_UTILITY_BID = 0.20D;
-    // Utility above which all of our offers will be
-    private double RESERVATION_VALUE = 0.4D;
-    // The max amount of the best bids to save
-    private int maxAmountSavedBits = 100;
-    // This is used to compute the closed bid for a given utility
-    private SortedOutcomeSpace SOS;
+    // *************************************************************************************************************
+    // *************************** Private Class used to predict the opponent model ********************************
+    // *************************************************************************************************************
+    private class Opponent {
+        // Bidding history of the opponent
+        BidHistory bidHistory;
+        // Number of issues in the domain
+        Integer num_issues;
+        // IDs of the issues
+        int[] issues_id;
+        // Values of the issues
+        EvaluatorDiscrete[] issuesEvaluator;
+
+        /**
+         * Constructor
+         *
+         * @param bid A bid used to populate the issue space
+         */
+        public Opponent(Bid bid) {
+            this.bidHistory = new BidHistory();
+            this.num_issues = bid.getIssues().size();
+            this.issues_id = new int[this.num_issues];
+
+            // Assign the issue IDs
+            for (int i = 0; i < bid.getIssues().size(); i++) {
+                this.issues_id[i] = bid.getIssues().get(i).getNumber();
+            }
+
+            // Create the evaluators for each issue
+            this.issuesEvaluator = new EvaluatorDiscrete[this.num_issues];
+            for (int i = 0; i < this.num_issues; i++) {
+                this.issuesEvaluator[i] = new EvaluatorDiscrete();
+            }
+        }
+
+        /**
+         * Add a bid to the opponent's bidding history
+         *
+         * @param bid The bid to add to the history
+         */
+        public void addBid(Bid bid) {
+            this.bidHistory.add(new BidDetails(bid, 0)); //初始化了bid和myUndiscountedUtil
+            this.setWeights();
+        }
+
+        /**
+         * Computes the estimated utility for the opponent for a given bid
+         *
+         * @param bid The bid of which we want to estimate the utility for the opponent
+         * @return estimated utility for the given bid
+         */
+        public double getOpponentUtility(Bid bid) { //***********************估算对手的utility***********************
+            double U = 0.0;
+
+            HashMap<Integer, Value> bid_values = bid.getValues();
+            // Iterate over the issues
+            for (int i = 0; i < this.num_issues; i++) {
+                // Get weight of current issue
+                double weight = this.issuesEvaluator[i].getWeight();
+
+                ValueDiscrete value = (ValueDiscrete) bid_values.get(this.issues_id[i]);
+
+                if ((this.issuesEvaluator[i]).getValues().contains(value)) {
+                    U += this.issuesEvaluator[i].getDoubleValue(value).doubleValue() * weight;
+                }
+            }
+            return U;
+        }
+
+        /**
+         * Set the weights of the issues and the values per issue
+         */
+        public void setWeights() {
+            this.setIssuesWeight();
+            this.setValuesWeight();
+        }
+
+        /**
+         * Set the weights for the values of each issues using frequency analysis
+         */
+        private void setValuesWeight() {
+            // Iterate over the issues
+            for (int i = 0; i < this.num_issues; i++) {
+                // The keys of the map are the possible values of the issues and the values of the map
+                // are the times each value of the issue was used
+                HashMap<ValueDiscrete, Double> values = new HashMap<ValueDiscrete, Double>();
+                // Iterate over the bidding history
+                for (int j = 0; j < this.bidHistory.size(); j++) {
+                    ValueDiscrete value = (ValueDiscrete) (this.bidHistory.getHistory().get(j).getBid()
+                            .getValue(this.issues_id[i]));
+                    if (values.containsKey(value)) {
+                        values.put(value, values.get(value) + 1);
+                    } else {
+                        values.put(value, 1.0);
+                    }
+                }
+
+                // Get the maximum number of times a value was used
+                double max_times = 0.0;
+                for (ValueDiscrete value : values.keySet()) {
+                    if (values.get(value) > max_times)
+                        max_times = values.get(value);
+                }
+
+                // Set the evaluation values of each issue as the number of times each value was used
+                // divided by the maximum number of times a value was used (so that the max is 1)
+                for (ValueDiscrete value : values.keySet()) {
+                    try {
+                        this.issuesEvaluator[i].setEvaluationDouble(value, values.get(value) / max_times);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }
+
+        /**
+         * Set the weights for each issue using frequency analysis
+         */
+        private void setIssuesWeight() {
+            int[] changeTimes = getChangesTimes(this.bidHistory.size());
+            double[] weights = new double[this.num_issues];
+            double totalWeight = 0.0;
+
+            //****************************计算对手每一个issue的weight*******************************
+            // Iterate over all the issues
+            for (int i = 0; i < this.num_issues; i++) {
+                weights[i] = 1.0 / this.num_issues + (this.bidHistory.size() - changeTimes[i] - 1) / 10.0;
+                // Keep the total weight to normalize
+                totalWeight += weights[i];
+            }
+
+            // Normalize the weights of the issues
+            for (int i = 0; i < this.num_issues; i++) {
+                this.issuesEvaluator[i].setWeight(weights[i] / totalWeight);
+            }
+        }
+
+        /**
+         * Return an array which represents the frequency of change of each issue only considering the last $rounds rounds
+         *
+         * @return an array in which each elements represents the number of changes of that issue
+         */
+        private int[] getChangesTimes(int rounds) {
+            // In this array we store the number of times each issue has changed
+            int[] num_changeTimes = new int[this.num_issues];
+
+            // Iterate over all the issues
+            for (int i = 0; i < this.num_issues; i++) {
+                Value oldValue = null;
+                Value currentValue;
+                int number = 0;
+
+                // Iterate over the last rounds bids from the bidding history
+                for (int j = this.bidHistory.size() - 1; j > this.bidHistory.size() - rounds - 1; j--) {
+                    currentValue = this.bidHistory.getHistory().get(j).getBid().getValue(this.issues_id[i]);
+
+                    // If it's not the first value and the current value is different from the previous one,
+                    // it means it has changed. We then increment the changes count.
+                    if (oldValue != null && !oldValue.equals(currentValue)) {
+                        number++;
+                    }
+
+                    oldValue = currentValue;
+                }
+                num_changeTimes[i] = number;
+            }
+            return num_changeTimes;
+        }
+
+        /**
+         * Return how hard the agent is. 1 = bids do not change in the last $rounds,
+         * 0 = bid change every time in the last $rounds, only consider the last $rounds rounds
+         *
+         * @param
+         * @return range 0-1
+         */
+        public Double hardChanges(int rounds) { //*************************计算对手的硬度*****************************
+
+            if (this.bidHistory.size() < rounds) { //确保对手已经出价
+                return null;
+            }
+
+            //记录对手改变次数，返回硬度
+            int[] changeTimes = this.getChangesTimes(rounds);
+            int sum = 0;
+            for (int times : changeTimes) {
+                sum += times;
+            }
+            return 1 - (sum / (double) this.num_issues) / (double) rounds;
+        }
+    }
+
+
+    // *************************************************************************************************************
+    // *************************************************************************************************************
+
+    private Bid lastReceivedBid = null; // Latest received bid that offered by the opponents
+
+    private HashMap<AgentID, Opponent> opponentsMap; // Hash map of the opponent model
+
+    // The range of time to keep offering the maximum utility bid
+    private double timeRange_MaxUtility = 0.20D; //*********** 提供最大utility offer的时间 **********
+    // Minimum utility that will be offered or accepted
+    private double reservation_Value = 0.4D; //************ 最小接受的utility **************
+    // The maximum number of the good bids will be saved
+    private int max_Num_GoodBits = 100;
+
+    // Used to find the closed bid with a given utility
+    private SortedOutcomeSpace sortedOutSpace;//**********是否可用***********
     private Random randomGenerator;
-    // The best bids found while searching are saved here
-    private List<BidDetails> bestGeneratedBids = new ArrayList<BidDetails>();
+    // A list to store the good bids that provided by opponent(*******储存对手的bids*******)
+    private List<BidDetails> goodBidsList = new ArrayList<BidDetails>();
 
-    int turn;
+    int num_Round; //The number of rounds for negotiation
 
-    int count=0;
-
-
-    //为Bid建一个list,里面放Bid
-    List<Bid> rankedBids= new ArrayList<Bid>();
+    //Build a list ro rank the stored bids
+    List<Bid> rankedBids = new ArrayList<Bid>();
     AbstractUtilitySpace utilitySpace;
     AdditiveUtilitySpace additiveUtilitySpace;
+
     @Override
     public void init(NegotiationInfo info) {
-        // The class variables are initialized
         super.init(info);
-        utilitySpace = estimateUtilitySpace_a10();
+
+        //Initial self modeling
+        utilitySpace = estimateUtilitySpace_a10(); //************** 相当于对自己建模初始化 **************
+
         additiveUtilitySpace = (AdditiveUtilitySpace) utilitySpace;
-        this.opponentsMap = new HashMap<AgentID, Opponent>();
-        this.SOS = new SortedOutcomeSpace(this.utilitySpace);
+        this.opponentsMap = new HashMap<AgentID, Opponent>(); //Initial opponent modeling
+        this.sortedOutSpace = new SortedOutcomeSpace(this.utilitySpace);
         this.randomGenerator = new Random();
-        rankedBids = userModel.getBidRanking().getBidOrder();
+        rankedBids = userModel.getBidRanking().getBidOrder(); // Initial bid ranking from small utility to big utility
     }
 
     /**
-     * Each round this method gets called and ask you to accept or offer. The
-     * first party in the first round is a bit different, it can only propose an
-     * offer.
+     * When this function is called, it is expected that the Party chooses one of the actions from the possible
+     * action list (accept or offer) and returns an instance of the chosen action.
      *
-     * @param validActions Either a list containing both accept and offer or only offer.
+     * @param list
      * @return The chosen action.
      */
     @Override
-    public Action chooseAction(List<Class<? extends Action>> validActions) {
-        this.turn++;
-        // For the first part of the negotiation, just keep offering the maximum
-        // utility bid
-        if (isMaxUtilityOfferTime()) {
-            Bid maxUtilityBid = null;
+    public Action chooseAction(List<Class<? extends Action>> list) {
+        this.num_Round++;
+        System.out.println(num_Round);//输出进行多少轮
+
+        // Lets start with our maximum utility bid and keep it for a range of time, because we are bad boys
+        if (inMaxUtilityTime()) { //******************在这个时间段内一直产生最大utility offer*********************
+            Bid max_Bid = null;
             try {
-                maxUtilityBid = rankedBids.get(rankedBids.size() - 1);
+                max_Bid = rankedBids.get(rankedBids.size() - 1); //获取最大utility offer
             } catch (Exception e) {
                 e.printStackTrace();
                 System.out.println("Cannot generate max utility bid");
             }
             System.out.println("It's max utility bid time!");
-            return new Offer(getPartyId(), maxUtilityBid);
+            return new Offer(getPartyId(), max_Bid);
         }
 
-        System.out.format("Last received bid had utility of [%f] for me%n", getUtility(this.lastReceivedBid));
+        //System.out.format("Last received bid had utility of [%f] for me%n", getUtility(this.lastReceivedBid));
 
-        // Generate a acceptable bid
-        Bid proposedBid = generateBid();
+        // Generate an offer
+        Bid my_Offer = generateBid();
 
-        // Check if we should accept the latest offer, given the bid we're
-        // proposing
-        if (isAcceptable(proposedBid)) {
-            System.out.println("I'm going to accept the latest offer!");
+        // Check if the latest offer should be accepted, given the offer
+        if (doAccept(my_Offer)) {
+         //   System.out.println("I'm going to accept the latest offer!");
             return new Accept(getPartyId(), this.lastReceivedBid);
         }
 
-        // Offer the proposed bid
-        System.out.format("I'm going to offer the bid that I generated, which has utility [%f]%n", additiveUtilitySpace.getUtility(proposedBid));
-        return new Offer(getPartyId(), proposedBid);
+        // Offer the bid
+        //System.out.format("I'm going to offer the bid that I generated, which has utility [%f]%n", additiveUtilitySpace.getUtility(my_Offer));
+        return new Offer(getPartyId(), my_Offer);
     }
+
     /**
-     * Compute the minimum utility that is acceptable at the current moment
-     * @return double indicating the min utility
+     * Compute minimum acceptable utility at the current moment
+     *
+     * @return double acceptable minimum utility
      */
-    private double getMinAcceptableUtility()
-    {
-        double timeLeft = 1 - getTimeLine().getTime();
-        // At the beginning of the negotiation the minimum utility will be 0.9,
-        double minUtility = Math.log10(timeLeft) / this.getConcedingFactor() + 0.9D;
+    private double acceptableUtility() {
+        double left_time = 1 - getTimeLine().getTime();
 
-        return Math.max(minUtility, this.RESERVATION_VALUE);
+        // At the beginning of the negotiation the minimum utility will be 0.9,
+        //*******************根据剩下的时间不同，最小接受的utility可以改变**********************
+        double min_utility = Math.log10(left_time) / this.changingFactor() + 0.9D;
+
+        return Math.max(min_utility, this.reservation_Value); //返回可接受的utility和最小utility中大的一个
     }
 
     /**
-     * Compute the conceding factor. If one of the opponents are hard headed concede faster
+     * Compute the changing factor. If one of the opponents are hard headed concede faster
+     *
      * @return double indicating the conceding factor
      */
-    private double getConcedingFactor()
-    {
-        Double max = 0.0;
-        Double current = 0.0;
-        for (AgentID id : this.opponentsMap.keySet()){
-            // Get how hard headed this agent is considering last 40 rounds
-            current = this.opponentsMap.get(id).hardHeaded(40);
-            if (current != null && current > max){
-                max = current;
+    private double changingFactor() { //****************计算出让步因素********************
+        Double max_changtimes = 0.0;
+        Double current_changtimes;
+        for (AgentID id : this.opponentsMap.keySet()) { //*******this.opponentsMap.keySet()表示多个opponent**************
+            // Get how hard that agent changes considering last 40 rounds
+            current_changtimes = this.opponentsMap.get(id).hardChanges(40); //**********每40轮判断一次***********
+            if (current_changtimes != null && current_changtimes > max_changtimes) {
+                max_changtimes = current_changtimes;
             }
         }
 
-        if (this.timeline.getTime() < 0.96D){
+        //**************************************************************************************************************
+        if (this.timeline.getTime() < 0.96D) {
             return 13;
         }
         // Check whether at least one agent is hard headed
         // If so we should concede faster
-        if (max > 0.6){
+        if (max_changtimes > 0.6) {
             return 7.0;
-        }
-        else{
+        } else {
             return 10.0;
         }
+        //**************************************************************************************************************
     }
+
     /**
-     * Determines whether we should accept the latest opponent's bid
-     * @param proposedBid The bid that we're going to offer
+     * Determines if we should accept the latest bid provided by opponent
+     *
+     * @param my_Offer The bid that we're going to offer
      * @return boolean indicating whether we should accept the latest bid
      */
-    private boolean isAcceptable(Bid proposedBid) {
-        // Check if the utility of the latest received offer is higher than the utility
-        // of the bid we are going to offer
-        boolean aNext = getUtility(this.lastReceivedBid) >= getUtility(proposedBid);
+    private boolean doAccept(Bid my_Offer) {
+        // Check if the utility of the latest received offer is higher than the utility of the bid will be offered later
+        boolean do_accept = getUtility(this.lastReceivedBid) >= getUtility(my_Offer);
         // Get the minimum acceptable utility
-        double minUtility = this.getMinAcceptableUtility();
+        double min_utility = this.acceptableUtility();
 
-        System.out.format("Min utility: [%f]%n", minUtility);
-
-        // We accept the latest offer if it has a greater utility than the one we are proposing,
-        // or if its utility is higher than our minUtility
-        return (aNext || getUtility(this.lastReceivedBid) > minUtility);
+        //System.out.format("Min utility: [%f]%n", minUtility);
+        // Accept the latest offer if it has a utility higher than the utility of the bid will be offered later,
+        // or if the utility is higher than our minUtility
+        return (do_accept || getUtility(this.lastReceivedBid) > min_utility);
     }
 
     /**
-     * Determines if we're in the time in which we should just keep
-     * offering the max utility bid
-     * @return boolean indicating whether we should offer the maximum utility bid
+     * Determines if the time is in the range of first part which was defined before
+     *
+     * @return boolean indicating if keeping offer the maximum utility offer
      */
-    private boolean isMaxUtilityOfferTime() {
-        return getTimeLine().getTime() < this.TIME_OFFERING_MAX_UTILITY_BID;
+    private boolean inMaxUtilityTime() {
+        return getTimeLine().getTime() < this.timeRange_MaxUtility; //现在的时间小于之前定义的最大utility的时间
     }
 
     /**
-     * Reception of offers made by other parties.
-     * @param sender The party that did the action. Can be null.
-     * @param action The action that party did.
+     * Receive the offer and store it
+     *
+     * @param opponent The agent that did the action.
+     * @param action The action that agent did.
      */
     @Override
-    public void receiveMessage(AgentID sender, Action action) {
-        super.receiveMessage(sender, action);
+    public void receiveMessage(AgentID opponent, Action action) {
+        super.receiveMessage(opponent, action);
 
-        // If we're receiving an offer
-        if (sender != null && action instanceof Offer) {
-            // Store the bid as the latest received bid
+        // Receiving an offer
+        if (opponent != null && action instanceof Offer) {
             this.lastReceivedBid = ((Offer) action).getBid();
 
-            // Store the bid in the opponent's history
-            if (opponentsMap.containsKey(sender)) {
-                opponentsMap.get(sender).addBid(this.lastReceivedBid);
-            } else {
-                // If it's the first time we see this opponent, create a new
-                // entry in the opponent map
+            if (opponentsMap.containsKey(opponent)) {
+                opponentsMap.get(opponent).addBid(this.lastReceivedBid); // Storing the received bid
+            } else { // If it's the first round of negotiation, create a new opponent map
                 try {
-                    Opponent newOpponent = new Opponent(generateRandomBid());
-                    newOpponent.addBid(this.lastReceivedBid);
-                    opponentsMap.put(sender, newOpponent);
+                    Opponent new_Opponent = new Opponent(generateRandomBid());
+                    new_Opponent.addBid(this.lastReceivedBid);
+                    opponentsMap.put(opponent, new_Opponent);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -204,115 +405,110 @@ public class Agent10 extends AbstractNegotiationParty {
     }
 
     /**
-     * Generates a random bid that has an higher utility than
-     * our own reservation value, by only searching in the space of acceptable utility
+     * Generates a random bid that has an higher utility than excepted utility
+     *
      * @return the random bid with utility higher than the reservation value
      */
-    private Bid generateAcceptableRandomBid(double minimum_acceptable_utility) {
-        Bid bid;
+    private Bid acceptableRandomBid(double min_acceptable_utility) {
+        Bid acceptable_bid;
         do {
-            // Generate random double in range 0:1
             double randomNumber = this.randomGenerator.nextDouble();
-            // Map randomNumber in range (minimum acceptable utility : 1)
-            double utility = minimum_acceptable_utility + randomNumber * (1.0 - minimum_acceptable_utility);
-            // Get a bid closest to $utility
-            bid = SOS.getBidNearUtility(utility).getBid();
-        } while (getUtility(bid) <= minimum_acceptable_utility);
-        return bid;
+
+            // calculate a utility based on the minimum utility and a 0-1 random number
+            double utility = min_acceptable_utility + randomNumber * (1.0 - min_acceptable_utility);
+            // Generate a efficient bid
+            acceptable_bid = sortedOutSpace.getBidNearUtility(utility).getBid();
+
+        } while (getUtility(acceptable_bid) <= min_acceptable_utility); //确保产生bid的utility大于目前最小期望utility值
+        return acceptable_bid;
     }
+
     /**
      * Generates a new bid basing on our own utility and the estimated utility
      * of the opponents, through frequency analysis
+     *
      * @return the generated bid, which has always a utility higher than our reservation value
      */
     private Bid generateBid() {
-        double nashProduct;
         Bid randomBid;
 
-        double acceptableUtility = this.getMinAcceptableUtility();
-        Bid bestBid = generateAcceptableRandomBid(acceptableUtility);
-        double bestNashProduct = -1;
+        double acceptableUtility = this.acceptableUtility(); //Calculate the acceptable utility for this moment***********
+        Bid generatedBid = acceptableRandomBid(acceptableUtility); //Generate a bid which has utility higher than minimum utility
+        double nashPointValue = 0.0; //Initial a nash point
+        double nashPredict; //for predict a better nash point
 
-        // Every 20 rounds, recompute the Nash product of the best saved bids of the opponents
-        // This is done to better approximate them, by taking new proposed bid into account
-        // in the opponent modeling
-        if (this.bestGeneratedBids.size() >= 100 && this.turn % 20 == 0){
-            this.recomputeUtilities();
+        //************************************************************************************************************
+        if (this.goodBidsList.size() >= 100 && this.num_Round % 20 == 0) { //The round bigger than 100 times，and each 20 round
+            this.evaluateUtilities(); //set myUndiscountedUtil which is nash value
         }
+        //************************************************************************************************************
 
-        // Generate 100 times random (valid) bids and see which one has a better average utility
-        // for the opponents
         for (int i = 0; i < 100; i++) {
-            // Generate a valid random bid, which is above our minimum acceptable utility
-            randomBid = generateAcceptableRandomBid(acceptableUtility);
+            // Generate a random bid, which has utility higher than minimum utility
+            randomBid = acceptableRandomBid(acceptableUtility);
 
-            nashProduct = this.getNashProduct(randomBid);
-            // Only save the best best bid found
-            if (nashProduct > bestNashProduct) {
-                bestBid = randomBid;
-                bestNashProduct = nashProduct;
+            nashPredict = this.getNashPoint(randomBid); //calculate the nash point = own utility * opponent's utility
+            // save the best bid
+            if (nashPredict > nashPointValue) { //if predicted nash value higher than before
+                generatedBid = randomBid;
+                nashPointValue = nashPredict;
             }
         }
-        // Save the best bid if the bestGenenratedBits list is not full
-        if (this.bestGeneratedBids.size() < maxAmountSavedBits){
-            this.bestGeneratedBids.add(new BidDetails(bestBid, bestNashProduct));
-            // If the list gets full sort it
-            if (this.bestGeneratedBids.size() == this.maxAmountSavedBits){
-                this.sortBestBids();
+
+        if (this.goodBidsList.size() < max_Num_GoodBits) {
+            this.goodBidsList.add(new BidDetails(generatedBid, nashPointValue));
+
+            if (this.goodBidsList.size() == this.max_Num_GoodBits) {
+                this.sortBids(); //Sort the bestGeneratedBids list based on utility for each bid
             }
-        }
-        else {
-            // Get the worst bid saved in $bestGeneratedBits
-            double worstBidsUtility = this.bestGeneratedBids.get(this.maxAmountSavedBits -1).getMyUndiscountedUtil();
-            // If $bestBid is better than save it and remove the worst bid
-            if (bestNashProduct > worstBidsUtility){
-                this.bestGeneratedBids.remove(0);
-                this.bestGeneratedBids.add(new BidDetails(bestBid, bestNashProduct));
-                this.sortBestBids();
+        } else {
+            // The last bid's utility is smallest
+            double worstBidsUtility = this.goodBidsList.get(this.max_Num_GoodBits - 1).getMyUndiscountedUtil();
+            // If new Bid is better than save it and remove the worst bid
+            if (nashPointValue > worstBidsUtility) { //The best utility for that moment
+                this.goodBidsList.remove(0);
+                this.goodBidsList.add(new BidDetails(generatedBid, nashPointValue));
+                this.sortBids(); //Sort bestGeneratedBids
             }
         }
 
         // When enough bids are saved, offer one of the best bids
-        if (this.bestGeneratedBids.size() >= this.maxAmountSavedBits){
-            // Get index of one of the 5 best saved bids
-            // this.bestGeneratdBids is sorted in ascending order with the utility of the opponents as key
-            int index =  this.maxAmountSavedBits - randomGenerator.nextInt(5) - 1;
-            bestBid = this.bestGeneratedBids.get(index).getBid();
+        if (this.goodBidsList.size() >= this.max_Num_GoodBits) {
+
+            // *******************************随机产生最后五个bids中的其中一个******************************
+            int index = this.max_Num_GoodBits - randomGenerator.nextInt(5) - 1;// random int 0～4
+            generatedBid = this.goodBidsList.get(index).getBid();
         }
-        return bestBid;
+        return generatedBid;
     }
 
-    /**
-     * Sort this.bestGeneratedBids by its utilities
-     */
-    private void sortBestBids(){
-        Collections.sort(this.bestGeneratedBids, new Comparator<BidDetails>() {
+    private void sortBids() {
+        Collections.sort(this.goodBidsList, new Comparator<BidDetails>() {
             @Override
             public int compare(BidDetails bid1, BidDetails bid2) {
-                if (bid1.getMyUndiscountedUtil() < bid2.getMyUndiscountedUtil()) return -1;
-                else if (bid1.getMyUndiscountedUtil() == bid2.getMyUndiscountedUtil()) return 0;
-                else return 1;
+                if (bid1.getMyUndiscountedUtil() < bid2.getMyUndiscountedUtil()) {
+                    return -1;
+                } else if (bid1.getMyUndiscountedUtil() == bid2.getMyUndiscountedUtil()) {
+                    return 0;
+                } else {
+                    return 1;
+                }
             }
         });
     }
 
-    /**
-     * Recompute the nash products of this.bestGeneratedBids.
-     */
-    private void recomputeUtilities()
-    {
-        for (BidDetails b: this.bestGeneratedBids){
-            b.setMyUndiscountedUtil(this.getNashProduct(b.getBid()));
+    private void evaluateUtilities() {
+        for (BidDetails bidDetails : this.goodBidsList) {
+            bidDetails.setMyUndiscountedUtil(this.getNashPoint(bidDetails.getBid())); //使用nash value设置myUndiscountedUtil
         }
     }
 
-    private double getNashProduct(Bid bid)
-    {
-        double nash = this.getUtility(bid);
+    private double getNashPoint(Bid bid) {
+        double nashValue = this.getUtility(bid); //Get the own utility for this bid
         for (AgentID agent : this.opponentsMap.keySet()) {
-            nash *= this.opponentsMap.get(agent).getUtility(bid);
+            nashValue *= this.opponentsMap.get(agent).getOpponentUtility(bid); //nash value = own utility * opponent's utility
         }
-        return nash;
+        return nashValue;
     }
 
     public AbstractUtilitySpace estimateUtilitySpace_a10() {
@@ -327,18 +523,18 @@ public class Agent10 extends AbstractNegotiationParty {
         BidRanking r = userModel.getBidRanking();
         //计算一共有多少个bid,赋值给totalnum
         int totalnum = r.getBidOrder().size();
-        System.out.println("totalnum:"+totalnum);
+        System.out.println("totalnum:" + totalnum);
         double points = 0;
         for (Bid b : r.getBidOrder()) {
 
             List<Issue> issues = b.getIssues();
-            int m=issues.size();
+            int m = issues.size();
 //            List<Issue> issuesList = bid.getIssues();
             //           System.out.println("this is Bid "+b.getValue(1)+" "+b.getValue(2)+" "+b.getValue(3));
             for (Issue issue : issues) {
                 //int n=issue
                 System.out.println(issue.getName() + ": " + b.getValue(issue.getNumber()));
-                System.out.println(issue.getNumber()+"*****************************");
+                System.out.println(issue.getNumber() + "*****************************");
             }
 
             /////////////////////////////////////////
@@ -357,219 +553,14 @@ public class Agent10 extends AbstractNegotiationParty {
 //        return new AdditiveUtilitySpaceFactory(getDomain()).getUtilitySpace();
 
     }
+
     /**
-     * Description of the agent
+     * A human-readable description for this party.
+     * @return
      */
     @Override
     public String getDescription() {
         return description;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//    @Override
-//    public void init(NegotiationInfo info) {
-//        super.init(info);
-//        //初始化时,从获取Bid流，从小到大排序
-//        rankedBids = userModel.getBidRanking().getBidOrder();
-//        for(Bid bid:rankedBids){
-//            System.out.println("打印出第"+count+"个bid"+bid);
-//            count++;
-//        }
-//
-//        }
-
-
-
-
-//        System.out.println("number of ranking: " + iterator);
-
-//        factory.estimateUsingBidRanks(userModel.getBidRanking());
-//        AbstractUtilitySpace utilitySpace = factory.getUtilitySpace();
-//        AdditiveUtilitySpace additiveUtilitySpace = (AdditiveUtilitySpace) utilitySpace;
-//        List<Issue> issues = additiveUtilitySpace.getDomain().getIssues();
-//
-//        for (Issue issue : issues) {
-//            int issueNumber = issue.getNumber();
-//            System.out.println(">> " + issue.getName() + " weight: " + additiveUtilitySpace.getWeight(issueNumber));
-//        }
-
-
-
-//    @Override
-//    public Action chooseAction(List<Class<? extends Action>> list) {
-//        // According to Stacked Alternating Offers Protocol list includes
-//        // Accept, Offer and EndNegotiation actions only.
-//        double time = getTimeLine().getTime(); // Gets the time, running from t = 0 (start) to t = 1 (deadline).
-//        // The time is normalized, so agents need not be
-//        // concerned with the actual internal clock.
-//
-//        // First half of the negotiation offering the max utility (the best agreement possible) for Example Agent
-//        if (time < 0.5) {
-//            return new Offer(this.getPartyId(), this.getMaxUtilityBid());
-//        } else {
-//
-//            // Accepts the bid on the table in this phase,
-//            // if the utility of the bid is higher than Example Agent's last bid.
-//            if (lastReceivedOffer != null
-//                    && myLastOffer != null
-//                    && this.utilitySpace.getUtility(lastReceivedOffer) > this.utilitySpace.getUtility(myLastOffer) &&
-//                    (this.utilitySpace.getUtility(lastReceivedOffer)>0.7)) {
-//                System.out.println("system want to make agreement at utility:\n");
-//                System.out.println(this.utilitySpace.getUtility(lastReceivedOffer));
-//                return new Accept(this.getPartyId(), lastReceivedOffer);
-//            } else {
-//                // Offering a random bid
-//                //myLastOffer = generateRandomBid();
-//
-//                // Offering a random bid with utility >0.7
-//                myLastOffer = generateRandomBidWithUtility(0.7); //offer with utility lager than 0.7
-//                return new Offer(this.getPartyId(), myLastOffer);
-//            }
-//        }
-//    }
-
-//    /**
-//     * This method is called to inform the party that another NegotiationParty chose an Action.
-//     * @param sender
-//     * @param act
-//     */
-//    @Override
-//    public void receiveMessage(AgentID sender, Action act) {
-//        super.receiveMessage(sender, act);
-//
-//        if (act instanceof Offer) { // sender is making an offer
-//            Offer offer = (Offer) act;
-//
-//            // storing last received offer
-//            lastReceivedOffer = offer.getBid();
-//        }
-//    }
-//
-//    /**
-//     * A human-readable description for this party.
-//     * @return
-//     */
-//    @Override
-//    public String getDescription() {
-//        return description;
-//    }
-//
-//    private Bid getMaxUtilityBid() {
-//        try {
-//            return this.utilitySpace.getMaxUtilityBid();
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//        return null;
-//    }
-//
-//    /**
-//     * Beware that if utilityThreshold is really high (e.g. 0.9),
-//     * there might not be a possible offer in given preference profile.
-//     * To be safe, compare your utilityThreshold with MaxUtility
-//     *
-//     * @param utilityThreshold
-//     * @return
-//     */
-//    public Bid generateRandomBidWithUtility(double utilityThreshold) {
-//        Bid randomBid;
-//        double utility;
-//        do {
-//            randomBid = generateRandomBid();
-//            try {
-//                utility = utilitySpace.getUtility(randomBid);
-//            } catch (Exception e)
-//            {
-//                utility = 0.0;
-//            }
-//        }
-//        while (utility < utilityThreshold);
-//        return randomBid;
-//    }
-//
-////    @Override
-////    public AbstractUtilitySpace estimateUtilitySpace() {
-////        //Old function that not work really well
-////        Domain domain = getDomain();
-////        AdditiveUtilitySpaceFactory factory = new AdditiveUtilitySpaceFactory(domain);
-////        BidRanking r = userModel.getBidRanking();
-////
-////        //copy codes from AdditiveUtilitySpaceFactory.estimateUsingBidRanks
-////        double points = 0;
-////        for (Bid b : r.getBidOrder())
-////        {
-////            List<Issue> issues = b.getIssues();
-////            for (Issue i : issues)
-////            {
-////                int no = i.getNumber();
-////                ValueDiscrete v = (ValueDiscrete) b.getValue(no);
-////                double oldUtil = factory.getUtility(i, v);
-//////                System.out.println("old utility of "+i.getName()+i.getNumber()+": "+oldUtil);
-////                factory.setUtility(i, v, oldUtil + points);
-////            }
-////            points += 1;
-////        }
-////        factory.normalizeWeightsByMaxValues();
-////
-////        return factory.getUtilitySpace();
-//////        return new AdditiveUtilitySpaceFactory(getDomain()).getUtilitySpace();
-////    }
-//
-//    public AbstractUtilitySpace estimateUtilitySpace_a10() {
-//        //定义一个double型的二维数组，用来存放K值
-//        //Mun[m][n],m是issue的个数，n是value的个数
-//        double Num[][];
-//        //获取进来的domain
-//        Domain domain = getDomain();
-//        //根据domain生成factory
-//        AdditiveUtilitySpaceFactory factory = new AdditiveUtilitySpaceFactory(domain);
-//        //usermodel生成一个BidRanking，里面都是一个个bid,放到r里
-//        BidRanking r = userModel.getBidRanking();
-//        //计算一共有多少个bid,赋值给totalnum
-//        int totalnum = r.getBidOrder().size();
-//        System.out.println("totalnum:"+totalnum);
-//        double points = 0;
-//        for (Bid b : r.getBidOrder()) {
-//
-//            List<Issue> issues = b.getIssues();
-//            int m=issues.size();
-////            List<Issue> issuesList = bid.getIssues();
-// //           System.out.println("this is Bid "+b.getValue(1)+" "+b.getValue(2)+" "+b.getValue(3));
-//            for (Issue issue : issues) {
-//                //int n=issue
-//                System.out.println(issue.getName() + ": " + b.getValue(issue.getNumber()));
-//                System.out.println(issue.getNumber()+"*****************************");
-//            }
-//
-//            /////////////////////////////////////////
-//            for (Issue i : issues) {
-//                int no = i.getNumber();
-//                ValueDiscrete v = (ValueDiscrete) b.getValue(no);
-//                double oldUtil = factory.getUtility(i, v);
-////                System.out.println("old utility of "+i.getName()+i.getNumber()+": "+oldUtil);
-//                factory.setUtility(i, v, oldUtil + points);
-//            }
-//            points += 1;
-//        }
-//        factory.normalizeWeightsByMaxValues();
-//
-//        return factory.getUtilitySpace();
-////        return new AdditiveUtilitySpaceFactory(getDomain()).getUtilitySpace();
-//
-//    }
-
 }
-

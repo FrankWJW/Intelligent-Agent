@@ -659,8 +659,8 @@ public class Agent26 extends AbstractNegotiationParty {
             //           System.out.println("this is Bid "+b.getValue(1)+" "+b.getValue(2)+" "+b.getValue(3));
             for (Issue issue : issues) {
                 //int n=issue
-                System.out.println(issue.getName() + ": " + b.getValue(issue.getNumber()));
-                System.out.println(issue.getNumber()+"*****************************");
+//                System.out.println(issue.getName() + ": " + b.getValue(issue.getNumber()));
+//                System.out.println(issue.getNumber()+"*****************************");
             }
 
             /////////////////////////////////////////
