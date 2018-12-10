@@ -2,6 +2,7 @@ import java.util.List;
 
 import genius.core.AgentID;
 import genius.core.Bid;
+import genius.core.Domain;
 import genius.core.actions.Accept;
 import genius.core.actions.Action;
 import genius.core.actions.Offer;
@@ -10,6 +11,8 @@ import genius.core.issue.IssueDiscrete;
 import genius.core.issue.ValueDiscrete;
 import genius.core.parties.AbstractNegotiationParty;
 import genius.core.parties.NegotiationInfo;
+import genius.core.uncertainty.AdditiveUtilitySpaceFactory;
+import genius.core.uncertainty.BidRanking;
 import genius.core.utility.AbstractUtilitySpace;
 import genius.core.utility.AdditiveUtilitySpace;
 import genius.core.utility.EvaluatorDiscrete;
@@ -28,7 +31,7 @@ public class ExampleAgent extends AbstractNegotiationParty {
     @Override
     public void init(NegotiationInfo info) {
         super.init(info);
-        AbstractUtilitySpace utilitySpace = info.getUtilitySpace();
+        AbstractUtilitySpace utilitySpace = estimateUtilitySpace_a10();
         AdditiveUtilitySpace additiveUtilitySpace = (AdditiveUtilitySpace) utilitySpace;
 
         List< Issue > issues = additiveUtilitySpace.getDomain().getIssues();
@@ -88,7 +91,8 @@ public class ExampleAgent extends AbstractNegotiationParty {
             // if the utility of the bid is higher than Example Agent's last bid.
             if (lastReceivedOffer != null
                     && myLastOffer != null
-                    && this.utilitySpace.getUtility(lastReceivedOffer) > this.utilitySpace.getUtility(myLastOffer)) {
+                    && this.utilitySpace.getUtility(lastReceivedOffer) > this.utilitySpace.getUtility(myLastOffer)
+                    &&this.utilitySpace.getUtility(lastReceivedOffer)>0.7) {
 
                 return new Accept(this.getPartyId(), lastReceivedOffer);
             } else {
@@ -96,7 +100,7 @@ public class ExampleAgent extends AbstractNegotiationParty {
                 //  myLastOffer = generateRandomBidWithUtility(0.7);
 
                 // Offering a random offer
-                myLastOffer = generateRandomBid();
+                myLastOffer = generateRandomBidWithUtility(0.7);
                 return new Offer(this.getPartyId(), myLastOffer);
             }
         }
@@ -151,5 +155,49 @@ public class ExampleAgent extends AbstractNegotiationParty {
         while (utility < utilityThreshold);
         return randomBid;
     }
+    public AbstractUtilitySpace estimateUtilitySpace_a10() {
+        //定义一个double型的二维数组，用来存放K值
+        //Mun[m][n],m是issue的个数，n是value的个数
+        double Num[][];
+        //获取进来的domain
+        Domain domain = getDomain();
+        //根据domain生成factory
+        AdditiveUtilitySpaceFactory factory = new AdditiveUtilitySpaceFactory(domain);
+        //usermodel生成一个BidRanking，里面都是一个个bid,放到r里
+        BidRanking r = userModel.getBidRanking();
+        //计算一共有多少个bid,赋值给totalnum
+        int totalnum = r.getBidOrder().size();
+        System.out.println("totalnum:"+totalnum);
+        double points = 0;
+        for (Bid b : r.getBidOrder()) {
+
+            List<Issue> issues = b.getIssues();
+            int m=issues.size();
+//            List<Issue> issuesList = bid.getIssues();
+            //           System.out.println("this is Bid "+b.getValue(1)+" "+b.getValue(2)+" "+b.getValue(3));
+            for (Issue issue : issues) {
+                //int n=issue
+                System.out.println(issue.getName() + ": " + b.getValue(issue.getNumber()));
+                System.out.println(issue.getNumber()+"*****************************");
+            }
+
+            /////////////////////////////////////////
+            for (Issue i : issues) {
+                int no = i.getNumber();
+                ValueDiscrete v = (ValueDiscrete) b.getValue(no);
+                double oldUtil = factory.getUtility(i, v);
+//                System.out.println("old utility of "+i.getName()+i.getNumber()+": "+oldUtil);
+                factory.setUtility(i, v, oldUtil + points);
+            }
+            points += 1;
+        }
+        factory.normalizeWeightsByMaxValues();
+
+        return factory.getUtilitySpace();
+//        return new AdditiveUtilitySpaceFactory(getDomain()).getUtilitySpace();
+
+    }
+
+
 }
 
